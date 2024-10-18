@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Script size</title><link href="styles.css" rel="stylesheet" type="text/css"/></head>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Script size</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
 <body>
-<section id="lvl_129"><span class="judgment-body__number">i.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top"><u>Script size</u></p>
-</div>
-</section>
-<section class="judgment-body__section" id="para_725"><span class="judgment-body__number">725.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">At <b>Wright11 [545.f] {CSW/1/102}</b>, Dr
-              Wright stated that “<i>BTC has limited the ability to use script by placing a maximum size and enforcing
-                this rigorously. The limit of 520 bytes gives very little ability to add data</i>”.</p>
-</div>
-</section>
-<section class="judgment-body__section" id="para_726"><span class="judgment-body__number">726.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">Dr Wright’s contention that “BTC” had “placed” a
-              maximum size of 520 bytes was supported by a footnote which referenced <b>{L9/247.1}</b>, a version of the
-              script.h file { version 0.10.0rc3 of the Bitcoin code: <b>Wuille2 [7] {C1/2/2}</b>} which at row 18
-              declared that a constant unsigned integer named “MAX_SCRIPT_ELEMENT_SIZE” had a value of 520 bytes. It is
-              evident that at the time of writing his statement, Dr Wright thought that this change was “BTC” “placing”
-              a maximum size on script. </p>
-</div>
-</section>
-<section class="judgment-body__section" id="para_727"><span class="judgment-body__number">727.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">In his second witness statement, Dr Wuille
-              pointed out that the code referenced by Dr Wright did not introduce the 520 byte limit on script at all.
-              Instead, Satoshi Nakamoto had introduced a limit on the size of data elements inside script in July 2010
-              and tightened it to 520 bytes in version 0.3.9 of the code on 15 August 2010 {<b>Wuille2 [9]
-                {C1/2/2}</b>}. On 23 January 2013 the name MAX_SCRIPT_ELEMENT_SIZE was given to that limit {<b>Wuille2
-                [11] {C1/2/3}</b>}. Dr Wuille’s evidence to this effect was not challenged by Dr Wright and I accept it.
-            </p>
-</div>
-</section>
-<section class="judgment-body__section" id="para_728"><span class="judgment-body__number">728.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">In cross-examination, Dr Wright confirmed he had
-              read Dr Wuille’s statement but said ‘Do I remember all of it off the top of my head? No.’ It appears he
-              sensed he was being trapped. It was pointed out to Dr Wright that he had not identified the commit that
-              had named the limit MAX_SCRIPT_ELEMENT_SIZE, Dr Wright answered “<i>No, but it was actually one that I was
-                behind</i>” <b>{Day8/145:5}</b>. Unfortunately for Dr Wright, that could not be true. The commit that
-              had led to the introduction of the MAX_SCRIPT_ELEMENT_SIZE variable is at <b>{D1/28/1}</b>. It was made by
-              Matt Corallo, aka TheBlueMatt on 23 January 2013. Dr Wright had to admit that he was not TheBlueMatt
-              <b>{Day8/145:10</b>}. Indeed, TheBlueMatt is the tenth defendant in the BTC Core Claim, and one of the
-              Developers.</p>
-</div>
-</section>
-<section class="judgment-body__section" id="para_729"><span class="judgment-body__number">729.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">Faced with the contradiction between Dr Wright’s
-              written evidence that the 520-byte limit had been “<i>placed</i>” by BTC and the factual record identified
-              by Dr Wuille that it had been imposed by Satoshi Nakamoto, Dr Wright swerved to a suggestion that the
-              limit had been introduced “<i>as a temporary measure</i>” as a result of a “<i>communication between
-                multiple people, including Gavin and myself</i>” <b>{Day8/151:10-14}</b>. </p>
-</div>
-</section>
-<section class="judgment-body__section" id="para_730"><span class="judgment-body__number">730.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">However, there is no record of such a
-              conversation in the documents disclosed by Gavin Andresen in the Kleiman proceedings. In any event, the
-              change had been implemented by Satoshi Nakamoto many months before he left the Bitcoin project. Satoshi
-              could have, but did not, reverse the limit. Dr Wright’s explanation for this was evasive: “<i>I was
-                building other systems</i>” <b>{Day8/151:18}</b>.</p>
-</div>
-</section>
-<a href="./extracted_content_lvl_130.html">Next page</a></body>
+  <section id="lvl_129"><span class="judgment-body__number">i.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top"><u>Script size</u></p>
+    </div>
+  </section>
+  <section class="judgment-body__section" id="para_725"><span class="judgment-body__number">725.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">At <b>Wright11 [545.f] {CSW/1/102}</b>, Dr
+        Wright stated that “<i>BTC has limited the ability to use script by placing a maximum size and enforcing
+          this rigorously. The limit of 520 bytes gives very little ability to add data</i>”.</p>
+    </div>
+  </section>
+  <section class="judgment-body__section" id="para_726"><span class="judgment-body__number">726.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">Dr Wright’s contention that “BTC” had “placed” a
+        maximum size of 520 bytes was supported by a footnote which referenced <b>{L9/247.1}</b>, a version of the
+        script.h file { version 0.10.0rc3 of the Bitcoin code: <b>Wuille2 [7] {C1/2/2}</b>} which at row 18
+        declared that a constant unsigned integer named “MAX_SCRIPT_ELEMENT_SIZE” had a value of 520 bytes. It is
+        evident that at the time of writing his statement, Dr Wright thought that this change was “BTC” “placing”
+        a maximum size on script. </p>
+    </div>
+  </section>
+  <section class="judgment-body__section" id="para_727"><span class="judgment-body__number">727.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">In his second witness statement, Dr Wuille
+        pointed out that the code referenced by Dr Wright did not introduce the 520 byte limit on script at all.
+        Instead, Satoshi Nakamoto had introduced a limit on the size of data elements inside script in July 2010
+        and tightened it to 520 bytes in version 0.3.9 of the code on 15 August 2010 {<b>Wuille2 [9]
+          {C1/2/2}</b>}. On 23 January 2013 the name MAX_SCRIPT_ELEMENT_SIZE was given to that limit {<b>Wuille2
+          [11] {C1/2/3}</b>}. Dr Wuille’s evidence to this effect was not challenged by Dr Wright and I accept it.
+      </p>
+    </div>
+  </section>
+  <section class="judgment-body__section" id="para_728"><span class="judgment-body__number">728.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">In cross-examination, Dr Wright confirmed he had
+        read Dr Wuille’s statement but said ‘Do I remember all of it off the top of my head? No.’ It appears he
+        sensed he was being trapped. It was pointed out to Dr Wright that he had not identified the commit that
+        had named the limit MAX_SCRIPT_ELEMENT_SIZE, Dr Wright answered “<i>No, but it was actually one that I was
+          behind</i>” <b>{Day8/145:5}</b>. Unfortunately for Dr Wright, that could not be true. The commit that
+        had led to the introduction of the MAX_SCRIPT_ELEMENT_SIZE variable is at <b>{D1/28/1}</b>. It was made by
+        Matt Corallo, aka TheBlueMatt on 23 January 2013. Dr Wright had to admit that he was not TheBlueMatt
+        <b>{Day8/145:10</b>}. Indeed, TheBlueMatt is the tenth defendant in the BTC Core Claim, and one of the
+        Developers.
+      </p>
+    </div>
+  </section>
+  <section class="judgment-body__section" id="para_729"><span class="judgment-body__number">729.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">Faced with the contradiction between Dr Wright’s
+        written evidence that the 520-byte limit had been “<i>placed</i>” by BTC and the factual record identified
+        by Dr Wuille that it had been imposed by Satoshi Nakamoto, Dr Wright swerved to a suggestion that the
+        limit had been introduced “<i>as a temporary measure</i>” as a result of a “<i>communication between
+          multiple people, including Gavin and myself</i>” <b>{Day8/151:10-14}</b>. </p>
+    </div>
+  </section>
+  <section class="judgment-body__section" id="para_730"><span class="judgment-body__number">730.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">However, there is no record of such a
+        conversation in the documents disclosed by Gavin Andresen in the Kleiman proceedings. In any event, the
+        change had been implemented by Satoshi Nakamoto many months before he left the Bitcoin project. Satoshi
+        could have, but did not, reverse the limit. Dr Wright’s explanation for this was evasive: “<i>I was
+          building other systems</i>” <b>{Day8/151:18}</b>.</p>
+    </div>
+  </section>
+  <a href="./extracted_content_lvl_130.html">Next page</a>
+</body>
+
 </html>

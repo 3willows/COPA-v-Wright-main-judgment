@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Security of Digital Signatures</title><link href="styles.css" rel="stylesheet" type="text/css"/></head>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Security of Digital Signatures</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
 <body>
-<section id="lvl_61">
-<p><b>Security of Digital Signatures</b></p>
-</section>
-<section class="judgment-body__section" id="para_334"><span class="judgment-body__number">334.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">The extent of security provided by a digital
-              signature depends on the nature of the exercise undertaken to prove access to or control of a private key.
-              Signing a message with a private key produces an output such that the Verify algorithm can be run to
-              ensure that this message was signed by the person with the private key. The message must be a new one,
-              since otherwise the recipient could simply copy a signed message and later hold it out as proof of
-              ownership of the underlying private key (a process known as a “replay attack”). It is for this reason that
-              a user must be asked to sign a new message. This explanation is significant for the topic of the Sartre
-              message.</p>
-</div>
-</section>
-<section class="judgment-body__section" id="para_335"><span class="judgment-body__number">335.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">As with any validation process, there are
-              certain steps in the digital signature process which require trust and verification, so that a party can
-              be as sure as possible that what is being demonstrated is what it purports to be. If a user controls the
-              software performing the signature verification or the software contains a bug, then the signature can
-              appear to be verified when it is not truly verified. Trust in the software that is being used is therefore
-              important. In a section of her report agreed by Mr Gao, Prof Meiklejohn set out several requirements which
-              must be fulfilled to establish possession of a private key:</p>
-<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">335.1.</span></span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top"><u>Unique message</u> – The message to be
-                  signed must not have been signed before for that public key.</p>
-</div>
-</section>
-<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">335.2.</span></span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top"><u>Method of and result of verification</u>
-                  – The verification algorithm must be run using the public key, the new message and the signature given
-                  by the user.</p>
-</div>
-</section>
-<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">335.3.</span></span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top"><u>Semi-manual verification</u> –
-                  Verification is rarely if ever performed on paper due to the size of the numbers involved. If instead
-                  it is done using software on a computing device, then the verifier must trust that the computing
-                  device is accurately performing each step.</p>
-</div>
-</section>
-<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">335.4.</span></span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top"><u>Software integrity</u> – Usually, the
-                  verifier runs the verification algorithm using an existing piece of software. Here, the person must
-                  trust that the correct algorithm is being run, that it is using the correct inputs and that the
-                  software is secure and has not been altered. This would include that it has been downloaded properly
-                  and not over an unsecure connection.</p>
-</div>
-</section>
-<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">335.5.</span></span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top"><u>Software and hardware integrity of the
-                    computing device</u> – It is also necessary that the verifier trusts the hardware, operating system
-                  and software on any computing device (i.e. not limited to the verification software itself). </p>
-</div>
-</section>
-</div>
-</section>
-<a href="./extracted_content_lvl_62.html">Next page</a></body>
+  <section id="lvl_61">
+    <p><b>Security of Digital Signatures</b></p>
+  </section>
+  <section class="judgment-body__section" id="para_334"><span class="judgment-body__number">334.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">The extent of security provided by a digital
+        signature depends on the nature of the exercise undertaken to prove access to or control of a private key.
+        Signing a message with a private key produces an output such that the Verify algorithm can be run to
+        ensure that this message was signed by the person with the private key. The message must be a new one,
+        since otherwise the recipient could simply copy a signed message and later hold it out as proof of
+        ownership of the underlying private key (a process known as a “replay attack”). It is for this reason that
+        a user must be asked to sign a new message. This explanation is significant for the topic of the Sartre
+        message.</p>
+    </div>
+  </section>
+  <section class="judgment-body__section" id="para_335"><span class="judgment-body__number">335.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">As with any validation process, there are
+        certain steps in the digital signature process which require trust and verification, so that a party can
+        be as sure as possible that what is being demonstrated is what it purports to be. If a user controls the
+        software performing the signature verification or the software contains a bug, then the signature can
+        appear to be verified when it is not truly verified. Trust in the software that is being used is therefore
+        important. In a section of her report agreed by Mr Gao, Prof Meiklejohn set out several requirements which
+        must be fulfilled to establish possession of a private key:</p>
+      <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+            style="font-style:normal;font-weight:normal">335.1.</span></span>
+        <div>
+          <p class="judgment-body__text judgment-body__no-margin-top"><u>Unique message</u> – The message to be
+            signed must not have been signed before for that public key.</p>
+        </div>
+      </section>
+      <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+            style="font-style:normal;font-weight:normal">335.2.</span></span>
+        <div>
+          <p class="judgment-body__text judgment-body__no-margin-top"><u>Method of and result of verification</u>
+            – The verification algorithm must be run using the public key, the new message and the signature given
+            by the user.</p>
+        </div>
+      </section>
+      <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+            style="font-style:normal;font-weight:normal">335.3.</span></span>
+        <div>
+          <p class="judgment-body__text judgment-body__no-margin-top"><u>Semi-manual verification</u> –
+            Verification is rarely if ever performed on paper due to the size of the numbers involved. If instead
+            it is done using software on a computing device, then the verifier must trust that the computing
+            device is accurately performing each step.</p>
+        </div>
+      </section>
+      <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+            style="font-style:normal;font-weight:normal">335.4.</span></span>
+        <div>
+          <p class="judgment-body__text judgment-body__no-margin-top"><u>Software integrity</u> – Usually, the
+            verifier runs the verification algorithm using an existing piece of software. Here, the person must
+            trust that the correct algorithm is being run, that it is using the correct inputs and that the
+            software is secure and has not been altered. This would include that it has been downloaded properly
+            and not over an unsecure connection.</p>
+        </div>
+      </section>
+      <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+            style="font-style:normal;font-weight:normal">335.5.</span></span>
+        <div>
+          <p class="judgment-body__text judgment-body__no-margin-top"><u>Software and hardware integrity of the
+              computing device</u> – It is also necessary that the verifier trusts the hardware, operating system
+            and software on any computing device (i.e. not limited to the verification software itself). </p>
+        </div>
+      </section>
+    </div>
+  </section>
+  <a href="./extracted_content_lvl_62.html">Next page</a>
+</body>
+
 </html>

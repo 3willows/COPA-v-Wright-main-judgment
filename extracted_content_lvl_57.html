@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Transacting in Bitcoin</title><link href="styles.css" rel="stylesheet" type="text/css"/></head>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Transacting in Bitcoin</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
 <body>
-<section id="lvl_57">
-<p><b>Transacting in Bitcoin</b></p>
-</section>
-<section class="judgment-body__section" id="para_321"><span class="judgment-body__number">321.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">Bitcoin users can identify themselves using, for
-              example, their public key or (more commonly) addresses, which are alphanumeric identifiers that are
-              different from, but often related to the public key. Prior to 2012, the only type of address used in
-              Bitcoin transactions was a pay-to-public-key-hash (P2PKH), whereas sending to a public key was referred to
-              as pay-to-public key (P2PK).</p>
-</div>
-</section>
-<section class="judgment-body__section" id="para_322"><span class="judgment-body__number">322.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">When addresses are derived from public keys,
-              each address has its associated private key that can be used to sign messages. Accordingly, given an
-              address, a public key, a signature and a message, anyone can verify whether or not (a) the address was
-              derived from the public key and (b) the signature and signed message are valid for that public key. It is
-              these properties that allow Bitcoin users to transfer ownership of bitcoins they possess such that they
-              can be independently verified, but without disclosing the real world identity of the individual with the
-              private key. </p>
-</div>
-</section>
-<section class="judgment-body__section" id="para_323"><span class="judgment-body__number">323.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">In Bitcoin, a transaction can have multiple
-              senders and recipients. Senders and recipients are identified using addresses, and the value being sent or
-              received by each party is identified in bitcoins. Bitcoins are divisible, and can be divided to the eighth
-              decimal place; i.e., the smallest amount it is possible to send is 1 x 10<sup>-8</sup> bitcoin
-              (0.00000001).</p>
-</div>
-</section>
-<section class="judgment-body__section" id="para_324"><span class="judgment-body__number">324.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">A transaction contains, in its simplest form, an
-              input corresponding to the sender and one output corresponding to the recipient. The transaction output
-              (TXO) consists of the recipient’s address and the value of bitcoin sent to that address. A Bitcoin
-              transaction also contains a digital signature from the sender, where the message being signed contains the
-              rest of the information detailing the transaction. This allows peers on the network to verify the
-              transaction, as they can look at the address, public key and signature to check that the public key aligns
-              with the address and the signature verifies it.</p>
-</div>
-</section>
-<section class="judgment-body__section" id="para_325"><span class="judgment-body__number">325.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">As transactions are public, it is possible to
-              check to see if the address was used before, to confirm that the address did in fact receive the number of
-              bitcoin it is now spending. To prevent double spending, Bitcoin tracks which transaction outputs are
-              unspent and allows only those unspent outputs to spend the coins they receive. Sometime in about 2011 or
-              2012, the term UTXO was introduced to refer to an unspent transaction output.</p>
-</div>
-</section>
-<section class="judgment-body__section" id="para_326"><span class="judgment-body__number">326.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">Moving beyond the simple example with one input
-              and one output, transactions with multiple inputs function in the same way: each transaction input needs
-              to specify its own distinct UTXO and valid signature on the transaction data. Transactions with multiple
-              inputs do not necessarily have multiple senders, as they could just represent one sender spending the
-              contents of multiple UTXOs associated with the same address. </p>
-</div>
-</section>
-<section class="judgment-body__section" id="para_327"><span class="judgment-body__number">327.</span>
-<div>
-<p class="judgment-body__text judgment-body__no-margin-top">Similarly, transactions can have multiple
-              transaction outputs, where again there can be multiple distinct addresses (representing different
-              recipients) or not. This latter type of transaction is needed to divide bitcoins, as again any bitcoins
-              received in a transaction must be spent all at once. For example, if a user has 10 BTC associated with a
-              UTXO and wants to send two bitcoins to another user, they can form a transaction with one input
-              representing their 10 BTC UTXO (and a valid associated signature) and two outputs: one containing the
-              address of the other user and receiving 2 BTC, and the other containing an address they control and
-              receiving 8 BTC. In this way, a user can make change, just as happens when spending physical cash.</p>
-</div>
-</section>
-<a href="./extracted_content_lvl_58.html">Next page</a></body>
+  <section id="lvl_57">
+    <p><b>Transacting in Bitcoin</b></p>
+  </section>
+  <section class="judgment-body__section" id="para_321"><span class="judgment-body__number">321.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">Bitcoin users can identify themselves using, for
+        example, their public key or (more commonly) addresses, which are alphanumeric identifiers that are
+        different from, but often related to the public key. Prior to 2012, the only type of address used in
+        Bitcoin transactions was a pay-to-public-key-hash (P2PKH), whereas sending to a public key was referred to
+        as pay-to-public key (P2PK).</p>
+    </div>
+  </section>
+  <section class="judgment-body__section" id="para_322"><span class="judgment-body__number">322.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">When addresses are derived from public keys,
+        each address has its associated private key that can be used to sign messages. Accordingly, given an
+        address, a public key, a signature and a message, anyone can verify whether or not (a) the address was
+        derived from the public key and (b) the signature and signed message are valid for that public key. It is
+        these properties that allow Bitcoin users to transfer ownership of bitcoins they possess such that they
+        can be independently verified, but without disclosing the real world identity of the individual with the
+        private key. </p>
+    </div>
+  </section>
+  <section class="judgment-body__section" id="para_323"><span class="judgment-body__number">323.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">In Bitcoin, a transaction can have multiple
+        senders and recipients. Senders and recipients are identified using addresses, and the value being sent or
+        received by each party is identified in bitcoins. Bitcoins are divisible, and can be divided to the eighth
+        decimal place; i.e., the smallest amount it is possible to send is 1 x 10<sup>-8</sup> bitcoin
+        (0.00000001).</p>
+    </div>
+  </section>
+  <section class="judgment-body__section" id="para_324"><span class="judgment-body__number">324.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">A transaction contains, in its simplest form, an
+        input corresponding to the sender and one output corresponding to the recipient. The transaction output
+        (TXO) consists of the recipient’s address and the value of bitcoin sent to that address. A Bitcoin
+        transaction also contains a digital signature from the sender, where the message being signed contains the
+        rest of the information detailing the transaction. This allows peers on the network to verify the
+        transaction, as they can look at the address, public key and signature to check that the public key aligns
+        with the address and the signature verifies it.</p>
+    </div>
+  </section>
+  <section class="judgment-body__section" id="para_325"><span class="judgment-body__number">325.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">As transactions are public, it is possible to
+        check to see if the address was used before, to confirm that the address did in fact receive the number of
+        bitcoin it is now spending. To prevent double spending, Bitcoin tracks which transaction outputs are
+        unspent and allows only those unspent outputs to spend the coins they receive. Sometime in about 2011 or
+        2012, the term UTXO was introduced to refer to an unspent transaction output.</p>
+    </div>
+  </section>
+  <section class="judgment-body__section" id="para_326"><span class="judgment-body__number">326.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">Moving beyond the simple example with one input
+        and one output, transactions with multiple inputs function in the same way: each transaction input needs
+        to specify its own distinct UTXO and valid signature on the transaction data. Transactions with multiple
+        inputs do not necessarily have multiple senders, as they could just represent one sender spending the
+        contents of multiple UTXOs associated with the same address. </p>
+    </div>
+  </section>
+  <section class="judgment-body__section" id="para_327"><span class="judgment-body__number">327.</span>
+    <div>
+      <p class="judgment-body__text judgment-body__no-margin-top">Similarly, transactions can have multiple
+        transaction outputs, where again there can be multiple distinct addresses (representing different
+        recipients) or not. This latter type of transaction is needed to divide bitcoins, as again any bitcoins
+        received in a transaction must be spent all at once. For example, if a user has 10 BTC associated with a
+        UTXO and wants to send two bitcoins to another user, they can form a transaction with one input
+        representing their 10 BTC UTXO (and a valid associated signature) and two outputs: one containing the
+        address of the other user and receiving 2 BTC, and the other containing an address they control and
+        receiving 8 BTC. In this way, a user can make change, just as happens when spending physical cash.</p>
+    </div>
+  </section>
+  <a href="./extracted_content_lvl_58.html">Next page</a>
+</body>
+
 </html>
