@@ -1,35 +1,36 @@
 /* Global Styles */
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
-  padding: 20px;
+  margin: 2em; /* Using em for margin */
+  padding: 2em; /* Using em for padding */
   line-height: 1.6;
   box-sizing: border-box;
+  font-size: 1.2rem; /* Setting a base font size in rem */
 }
 
 /* Section Styles */
 section {
-  margin-bottom: 20px;
+  margin-bottom: 2em; /* Using em for margin */
 }
 
 section#lvl_148 {
   background-color: #f4f4f4;
-  padding: 20px;
+  padding: 2em; /* Using em for padding */
   border-bottom: 1px solid #ccc;
 }
 
 /* Judgment Body Section Styles */
 .judgment-body__section {
-  margin-bottom: 30px;
+  margin-bottom: 3em; /* Using em for margin */
 }
 
 .judgment-body__section span.judgment-body__number {
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 1em; /* Using em for margin */
 }
 
 .judgment-body__text {
-  margin-bottom: 15px;
+  margin-bottom: 1.5em; /* Using em for margin */
 }
 
 .judgment-body__no-margin-top {
@@ -39,35 +40,35 @@ section#lvl_148 {
 /* Responsive Design */
 @media (max-width: 768px) {
   body {
-      font-size: 16px;
-      margin: 15px;
-      padding: 15px;
+      font-size: 1.1rem; /* Adjusting font size for smaller screens */
+      margin: 1.5em;
+      padding: 1.5em;
   }
- section#lvl_148 {
-      padding: 15px;
+  section#lvl_148 {
+      padding: 1.5em;
   }
-.judgment-body__section {
-      margin-bottom: 20px;
+ .judgment-body__section {
+      margin-bottom: 2em;
   }
-.judgment-body__text {
-      margin-bottom: 10px;
+ .judgment-body__text {
+      margin-bottom: 1em;
   }
 }
 
 @media (max-width: 480px) {
   body {
-      font-size: 14px;
-      margin: 10px;
-      padding: 10px;
+      font-size: 1rem; /* Adjusting font size for very small screens */
+      margin: 1em;
+      padding: 1em;
   }
- section#lvl_148 {
-      padding: 10px;
+  section#lvl_148 {
+      padding: 1em;
   }
-.judgment-body__section {
-      margin-bottom: 15px;
+ .judgment-body__section {
+      margin-bottom: 1.5em;
   }
-.judgment-body__text {
-      margin-bottom: 5px;
+ .judgment-body__text {
+      margin-bottom: 0.5em;
   }
 }
 
