@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 20px;
+}
+
+section#lvl_148 {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Judgment Body Section Styles */
+.judgment-body__section {
+  margin-bottom: 30px;
+}
+
+.judgment-body__section span.judgment-body__number {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.judgment-body__text {
+  margin-bottom: 15px;
+}
+
+.judgment-body__no-margin-top {
+  margin-top: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+      font-size: 16px;
+  }
+  section#lvl_148 {
+      padding: 15px;
+  }
+ .judgment-body__section {
+      margin-bottom: 20px;
+  }
+ .judgment-body__text {
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      font-size: 14px;
+  }
+  section#lvl_148 {
+      padding: 10px;
+  }
+ .judgment-body__section {
+      margin-bottom: 15px;
+  }
+ .judgment-body__text {
+      margin-bottom: 5px;
+  }
+}
+
+/* Additional Styles for Better Readability */
+i, b {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
