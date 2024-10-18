@@ -52,14 +52,14 @@ a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
   body {
-    font-size: max(22px, 1.5rem);
+    font-size: max(20px, 1.5rem);
     /* Ensure font size is at least 22px */
   }
 }
 
 @media (max-width: 480px) {
   body {
-    font-size: max(22px, 1.8rem);
+    font-size: max(20px, 1.8rem);
     /* Ensure font size is at least 22px */
   }
 }
