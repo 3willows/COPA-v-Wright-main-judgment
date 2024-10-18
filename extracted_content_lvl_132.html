@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<body>
+<section id="lvl_132"><span class="judgment-body__number">i.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top"><u>CheckBlockHeader</u></p>
+          </div>
+        </section>
+        <section class="judgment-body__section" id="para_740"><span class="judgment-body__number">740.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top">The CheckBlockHeader function was introduced by
+              Dr Wuille in March 2014 as part of a series of header synchronisation changes {<b>Wuille1 [24-25]
+                {C1/1/6}</b>}.</p>
+          </div>
+        </section>
+        <section class="judgment-body__section" id="para_741"><span class="judgment-body__number">741.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top">CheckBlockHeader resulted from a split in the
+              functionality present in the CheckBlock function described at [651] to [652] above, so that two of the six
+              checks there described (the timestamp and proof-of-work checks) were prioritised ahead of the remaining
+              four checks {<b>Wuille1 [25] {C1/1/6}</b>}.</p>
+          </div>
+        </section>
+        <section class="judgment-body__section" id="para_742"><span class="judgment-body__number">742.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top">By modularising CheckBlock into two stages,
+              CheckBlockHeader and CheckBlock, nodes could quickly reject invalid blocks based on just their header,
+              removing the need to download all of their transaction data. </p>
+          </div>
+        </section>
+        <section class="judgment-body__section" id="para_743"><span class="judgment-body__number">743.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top">When he was first taken to the CheckBlockHeader
+              function in cross-examination, Dr Wright accepted that these changes were made by Dr Wuille (who had the
+              username Sipa on GitHub) in 2013 and were not in Satoshi Nakamoto’s original code
+              <b>{Day8/132:23}-{Day8/133:6}</b>.</p>
+          </div>
+        </section>
+        <section class="judgment-body__section" id="para_744"><span class="judgment-body__number">744.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top">However, one of Dr Wright’s reliance documents
+              was a document entitled “<i>BitCoin: SEIR-C propagation models of block and transaction dissemination</i>”
+              {L3/237} (“<i>the SEIR-C document</i>”). At <b>Wright11 AppendixB [14.2] {CSW/2/52}</b>, Dr Wright had
+              stated that this document had been created between about Oct-Dec 2008 “<i>before I released the system in
+                January 2009</i>”. In section 32 of the Appendix, I have found this document to be a forgery.</p>
+          </div>
+        </section>
+        <section class="judgment-body__section" id="para_745"><span class="judgment-body__number">745.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top">At <b>{L3/237/13}</b> the SEIR-C document
+              purported to provide a description of the Bitcoin system’s block validation process. It stated as follows
+              (and note the use of the present tense):</p>
+            <blockquote>
+              <section>
+                <p><i>“Each node verifies a block before it propagates it to the connected peer nodes. In this way only
+                    valid blocks are propagated, and any invalid blocks are quickly isolated. The BitCoin Core client
+                    lists all of the validation requirements in the following functions:</i></p>
+              </section>
+              <section>
+                <p><i>• CheckBlock</i></p>
+              </section>
+              <section>
+                <p><i>• CheckBlockHeader”</i></p>
+              </section>
+            </blockquote>
+          </div>
+        </section>
+        <section class="judgment-body__section" id="para_746"><span class="judgment-body__number">746.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top">When this anachronism (i.e. the inclusion of a
+              reference to a function from 2014 in a document purportedly from 2008) was put to him in
+              cross-examination, the exchanges proceeded as follows:</p>
+            <blockquote>
+              <section>
+                <p><i>“135: 9 Q. Do you want to carry on and we'll see that it then</i></p>
+              </section>
+              <section>
+                <p><i> 10 refers to two functions, the first is CheckBlock and</i></p>
+              </section>
+              <section>
+                <p><i> 11 the second is CheckBlockHeader, isn't it?</i></p>
+              </section>
+              <section>
+                <p><i> 12 A. Again, CheckBlock and CheckBlockHeader were meant to be</i></p>
+              </section>
+              <section>
+                <p><i> 13 implemented. CheckBlockHeader was a simple function for</i></p>
+              </section>
+              <section>
+                <p><i> 14 SPV. So in the client patches discussed with Gavin in</i></p>
+              </section>
+              <section>
+                <p><i> 15 2010, CheckBlockHeader was an implementation of</i></p>
+              </section>
+              <section>
+                <p><i> 16 a version of Bitcoin that does not have all of</i></p>
+              </section>
+              <section>
+                <p><i> 17 the checking. So that's different to the version Sipa</i></p>
+              </section>
+              <section>
+                <p><i> 18 put in, but that doesn't mean that there weren't</i></p>
+              </section>
+              <section>
+                <p><i> 19 functions. Again, CheckBlockHeader was about having an</i></p>
+              </section>
+              <section>
+                <p><i> 20 SPV, as defined in the White Paper, version of checking</i></p>
+              </section>
+              <section>
+                <p><i> 21 just the block headers.</i></p>
+              </section>
+              <section>
+                <p><i> 22 Q. There's no reference in the White Paper to</i></p>
+              </section>
+              <section>
+                <p><i> 23 CheckBlockHeader, is there?</i></p>
+              </section>
+              <section>
+                <p><i> 24 A. It has reference to SPV, which only checks Block Header.</i></p>
+              </section>
+              <section>
+                <p><i> 25 There is no reference to any of the coding terms in</i></p>
+              </section>
+              <section>
+                <p><i>136: 1 the Bitcoin White Paper.</i></p>
+              </section>
+              <section>
+                <p><i> 2 Q. When you say SPV checks -- "only checks Block Header",</i></p>
+              </section>
+              <section>
+                <p><i> 3 what do you mean by "SPV" there?</i></p>
+              </section>
+              <section>
+                <p><i> 4 A. Simplified Payment Verification.</i></p>
+              </section>
+              <section>
+                <p><i> 5 Q. Right.</i></p>
+              </section>
+              <section>
+                <p><i> 6 A. What that basically means is, like --</i></p>
+              </section>
+              <section>
+                <p><i> 7 Q. To assist in the payment of individual transactions?</i></p>
+              </section>
+              <section>
+                <p><i> 8 A. No, it's a -- basically what we're talking about is</i></p>
+              </section>
+              <section>
+                <p><i> 9 a light node. So a node where an individual doesn't</i></p>
+              </section>
+              <section>
+                <p><i> 10 need to download the entire blockchain. For instance,</i></p>
+              </section>
+              <section>
+                <p><i> 11 I can just have the block headers and then I can have</i></p>
+              </section>
+              <section>
+                <p><i> 12 a localised(?) path of where I'm checking an individual</i></p>
+              </section>
+              <section>
+                <p><i> 13 transaction. I can keep each of those.</i></p>
+              </section>
+              <section>
+                <p><i> 14 Q. Dr Wright, nobody referred to CheckBlockHeader until</i></p>
+              </section>
+              <section>
+                <p><i> 15 the change that I took you to, did they?</i></p>
+              </section>
+              <section>
+                <p><i> 16 A. No, that's wrong. That was actually part of building</i></p>
+              </section>
+              <section>
+                <p><i> 17 SPV systems, that was basically the function I was</i></p>
+              </section>
+              <section>
+                <p><i> 18 looking at at that time.</i></p>
+              </section>
+              <section>
+                <p><i> 19 Q. There isn't a single document in which anybody refers to</i></p>
+              </section>
+              <section>
+                <p><i> 20 CheckBlockHeader as a single function until Dr W[uille]</i></p>
+              </section>
+              <section>
+                <p><i> 21 introduced it through GitHub, right?</i></p>
+              </section>
+              <section>
+                <p><i> 22 A. I've no idea when he put it in that, but when I was</i></p>
+              </section>
+              <section>
+                <p><i> 23 discussing the introduction of SPV, these concepts were</i></p>
+              </section>
+              <section>
+                <p><i> 24 back there as well.</i></p>
+              </section>
+              <section>
+                <p><i> 25 Q. Mr Andresen did not introduce CheckBlockHeader, did he?</i></p>
+              </section>
+              <section>
+                <p><i>137: 1 A. No, Mr Andresen got a patch from me initially. So</i></p>
+              </section>
+              <section>
+                <p><i> 2 the patches for SPV were actually from Satoshi, me.</i></p>
+              </section>
+              <section>
+                <p><i> 3 Q. Dr Wright, we've got the patches that Satoshi Nakamoto</i></p>
+              </section>
+              <section>
+                <p><i> 4 sent to Mr Andresen; they do not include</i></p>
+              </section>
+              <section>
+                <p><i> 5 CheckBlockHeader.</i></p>
+              </section>
+              <section>
+                <p><i> 6 A. No, because I went off to develop things myself. So</i></p>
+              </section>
+              <section>
+                <p><i> 7 where I was talking about work that I did in my other</i></p>
+              </section>
+              <section>
+                <p><i> 8 companies, I didn't do everything publicly. The work on</i></p>
+              </section>
+              <section>
+                <p><i> 9 Teranode now that was iDaemon that I've put in here, all</i></p>
+              </section>
+              <section>
+                <p><i> 10 of those documents were based on our work, not his.</i></p>
+              </section>
+              <section>
+                <p><i> 11 Q. Dr Wright, I know you want to talk about all of your</i></p>
+              </section>
+              <section>
+                <p><i> 12 latest things. I'm actually trying to ask you about</i></p>
+              </section>
+              <section>
+                <p><i> 13 things that Satoshi Nakamoto would know about, and that</i></p>
+              </section>
+              <section>
+                <p><i> 14 is the original --</i></p>
+              </section>
+              <section>
+                <p><i> 15 A. No, you're --</i></p>
+              </section>
+              <section>
+                <p><i> 16 Q. -- Bitcoin code, right, and there was no reference in</i></p>
+              </section>
+              <section>
+                <p><i> 17 the original Bitcoin code to CheckBlockHeader,</i></p>
+              </section>
+              <section>
+                <p><i> 18 was there?</i></p>
+              </section>
+              <section>
+                <p><i> 19 A. Again, difference between core, as in main nodes, and</i></p>
+              </section>
+              <section>
+                <p><i> 20 those that are doing less, SPV, and there is a reference</i></p>
+              </section>
+              <section>
+                <p><i> 21 to SPV. SPV nodes are those that only have to check</i></p>
+              </section>
+              <section>
+                <p><i> 22 the headers across the network. If you read</i></p>
+              </section>
+              <section>
+                <p><i> 23 the section, you will see that.</i></p>
+              </section>
+              <section>
+                <p><i> 24 Q. Dr Wright, I am very confident that I can read any</i></p>
+              </section>
+              <section>
+                <p><i> 25 section of anything and I will not see a single</i></p>
+              </section>
+              <section>
+                <p><i>138: 1 reference to CheckBlockHeader.</i></p>
+              </section>
+              <section>
+                <p><i> 2 A. Because the code's not referenced in the White Paper at</i></p>
+              </section>
+              <section>
+                <p><i> 3 all.</i></p>
+              </section>
+              <section>
+                <p><i> 4 Q. And you're saying that -- when did you say then you</i></p>
+              </section>
+              <section>
+                <p><i> 5 invented this? Was it in 2010, you said, when you were</i></p>
+              </section>
+              <section>
+                <p><i> 6 talking to Mr Andresen?</i></p>
+              </section>
+              <section>
+                <p><i> 7 A. No, I started working on SPV before I even released</i></p>
+              </section>
+              <section>
+                <p><i> 8 Bitcoin. So, what I was doing is a combination of</i></p>
+              </section>
+              <section>
+                <p><i> 9 Timecoin, which was a separate product, and Bitcoin.</i></p>
+              </section>
+              <section>
+                <p><i> 10 Bitcoin was the main free product; Timecoin extended</i></p>
+              </section>
+              <section>
+                <p><i> 11 everything.”</i></p>
+              </section>
+            </blockquote>
+          </div>
+        </section>
+        <section class="judgment-body__section" id="para_747"><span class="judgment-body__number">747.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top">The Developers submitted that that set of
+              responses bears many of the common tell-tale signs of Dr Wright’s dishonesty. I agree. They include:</p>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">747.1.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top">An attempt to suggest that an optimisation
+                  introduced following Satoshi Nakamoto’s departure was something that Dr Wright had thought of all
+                  along. Suffice it to say, that was not something that it had occurred to Dr Wright to mention when he
+                  was initially taken to the CheckBlockHeader function: see [743] above.</p>
+              </div>
+            </section>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">747.2.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top">An attempt to suggest that the future
+                  optimisation was preordained in the Bitcoin White Paper. The Bitcoin White Paper simply does not
+                  engage in this sort of technical detail.</p>
+              </div>
+            </section>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">747.3.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top">An attempt to suggest that the feature
+                  emerged in discussions for which there would be a reliable document trail, but of which no documentary
+                  record exists. Gavin Andresen disclosed all of his communications with Satoshi Nakamoto, including
+                  patches. None includes a function called CheckBlockHeader.</p>
+              </div>
+            </section>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">747.4.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top">A vacuous reference to iDaemon and/or
+                  Terranode and/or Timecoin or other “<i>Star Trek-style technobabble</i>” (to quote Mr Hearn at
+                  <b>Hearn1 [28] {C/22/7}</b>).</p>
+              </div>
+            </section>
+          </div>
+        </section>
+        
+</body>
+</html>

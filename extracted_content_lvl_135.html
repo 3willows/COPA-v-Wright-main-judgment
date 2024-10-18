@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<body>
+<section id="lvl_135"><span class="judgment-body__number">iv.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top"><u>Bootstrapping</u></p>
+          </div>
+        </section>
+        <section class="judgment-body__section" id="para_760"><span class="judgment-body__number">760.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top">A further area of anachronism was identified by
+              Dr Wuille at <b>Wuille1, [13-23] {C1/1/3}</b> in the context of bootstrapping, which is the process by
+              which a node connects to the peer-to-peer network {<b>Wuille1, [14] {C1/1/4}</b>}. It is convenient to
+              take that topic in two parts:</p>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">760.1.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top">First, by looking at the way in which a node
+                  first connects to the peer-to-peer network.</p>
+              </div>
+            </section>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">760.2.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top">Second, by exploring how the Bitcoin
+                  Software then obtained the IP addresses of further nodes.</p>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="judgment-body__section" id="para_761"><span class="judgment-body__number">761.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top">The process for first connection went through
+              three phases:</p>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">761.1.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top"><b>IRC seeding</b>: When the Bitcoin
+                  Software was first released, nodes would connect to an IRC channel on a particular IRC server (which
+                  was hardcoded into the software) to see which other nodes were in the channel. It then built a
+                  database of IP addresses {<b>Wuille1, [15] {C1/1/4}</b>}.</p>
+              </div>
+            </section>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">761.2.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top"><b>Seeding from hard-coded IP addresses</b>:
+                  The software was then updated by Satoshi in June 2010 so that in addition to being able to connect to
+                  a particular IRC server, the IP addresses of some Bitcoin nodes was hardcoded into the software itself
+                  {<b>Wuille1, [16] {C1/1/4</b>}}. That can be seen at <b>{L6/182/4}</b> where the 47 seed IP addresses
+                  are identified in hex.</p>
+              </div>
+            </section>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">761.3.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top"><b>DNS seeding</b>: In March 2011 Jeff
+                  Garzik (then one of the core developers) proposed DNS seeding in a pull request on GitHub
+                  <b>{L7/205}</b>. DNS seeding would mean that nodes connected to a DNS server. The DNS server would
+                  record a number of Bitcoin node IP addresses {<b>Wuille1, [17] {C1/1/4}</b>}. Gavin Andresen
+                  recommended Jeff Garzik’s proposal to Satoshi Nakamoto in March 2011 <b>{L7/204.4}</b>. Satoshi’s
+                  response does not suggest that he accepted that there was a need for the change <b>{L7/204.7}</b>.
+                  However, the code was introduced into version 0.3.21 of the codebase in April 2011 <b>{L7/221/1</b>}
+                  (see fourth bullet point: “<i>A new method of finding bitcoin nodes to connect with, via DNS A
+                    records. Use the -dnsseed option to enable</i>”). The Bitcoin Software was then updated in version
+                  0.3.24 in July 2011 to make DNS seeding the default: <b>{L7/343}</b> at point C1 (“<i>DNS seeding
+                    enabled by default</i>”).</p>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="judgment-body__section" id="para_762"><span class="judgment-body__number">762.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top">The process for a new node to obtain the IP
+              addresses of additional nodes once it had connected to the network (which was undertaken through a
+              “getaddr” request) also went through a number of stages {<b>Wuille1, [18] {C1/1/4}</b>}:</p>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">762.1.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top">In the first release of the Bitcoin Software
+                  there was no limit on the number of IP addresses that a new node (a “receiving node”) could receive
+                  from a node receiving that request (a “sending node”).</p>
+              </div>
+            </section>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">762.2.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top">In November 2009 Satoshi Nakamoto changed
+                  the Bitcoin Software to ensure sending nodes would only send 1,000 addresses in any one message. If
+                  there were more than 1,000 addresses to send, then the sending node would have to send more than one
+                  message {see <b>{L6/29/4}</b> final lines: if (VInventoryToSend.size() &gt;= 1000)
+                  {pto-&gt;PushMessage(“inv”, vInventoryToSend);vInventoryToSend.clear()}.</p>
+              </div>
+            </section>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">762.3.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top">In June 2010, Satoshi made a further change
+                  so that receiving nodes would not have to process more than 1,000 addresses at a time. Individual
+                  messages with more than 1,000 addresses would be rejected {see <b>Wuille1, [19] {C1/1/5</b>} and
+                  <b>{L6/181/2}</b>: “// receiver rejects addr messages larger than 1000”}. This brought the position of
+                  receiving nodes into line with that of sending nodes – and so assumed that sending nodes would have
+                  updated their software in line with the change in November 2009.</p>
+              </div>
+            </section>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">762.4.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top">In October 2010, Satoshi made a further
+                  change so that if a sending node knew of 2000 or fewer active addresses, it would send all of them
+                  (albeit in messages of up to 1000 addresses at a time). If it knew of more than 2000 active addresses
+                  it would use a random number generator to send on average 2000 of them (again 1000 addresses at a
+                  time) {see <b>{L6/454/1</b>} green code passages}. Later that month, that was revised from 2000 to
+                  2500 {see <b>{L6/456/4}</b> green code passage halfway down the page in which 2000 is replaced with
+                  2500 and <b>Wuille1, [19] {C1/1/5}</b>.</p>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="judgment-body__section" id="para_763"><span class="judgment-body__number">763.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top">This history of bootstrapping can be compared
+              with another of Dr Wright’s reliance documents, namely <b>{L3/184}</b>, which purports to date from
+              December 2008. That document contains a section at the foot of <b>{L3/184/2}</b> that refers to “Node
+              discovery” and purports:</p>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">763.1.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top">to describe (at <b>{L3/184/2}</b>) the
+                  Bitcoin network finding nodes using DNS seeding (as well as other mechanisms), even though DNS seeding
+                  was not implemented until April 2011. Moreover, the note does not even refer to IRC seeding, which is
+                  the system originally introduced by Satoshi.</p>
+              </div>
+            </section>
+            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
+                  style="font-style:normal;font-weight:normal">763.2.</span></span>
+              <div>
+                <p class="judgment-body__text judgment-body__no-margin-top">to describe (at <b>{L3/184/3}</b>) the 1000
+                  and 2500 limits on the number of addresses that would be sent by sending nodes, even though those
+                  limits were not introduced until mid-late 2010.</p>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="judgment-body__section" id="para_764"><span class="judgment-body__number">764.</span>
+          <div>
+            <p class="judgment-body__text judgment-body__no-margin-top">Those anachronisms show that the document cannot
+              derive from December 2008, as the document’s metadata purports to suggest. Satoshi Nakamoto would have
+              been well aware of that shortcoming.</p>
+          </div>
+        </section>
+        
+</body>
+</html>
