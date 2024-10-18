@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8" /><meta content="width=device-width, initial-scale=1.0" name="viewport" /><title>UTXO</title><link href="styles.css" rel="stylesheet" type="text/css"/></head>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UTXO</title>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
 <body>
 <section id="lvl_134"><span class="judgment-body__number">iii.</span>
 <div>
@@ -10,75 +16,78 @@
 <section class="judgment-body__section" id="para_752"><span class="judgment-body__number">752.</span>
 <div>
 <p class="judgment-body__text judgment-body__no-margin-top">Bitcoin only allows nodes to accept a block if
-              all transactions in it are valid and are not already spent {see the Bitcoin White Paper at [5.5]
-              <b>{L5/26/3}</b>}. The initial release of the Bitcoin Software required there to be an index of historical
-              transactions to enable nodes to check whether the output of a transaction had already been spent
-              {<b>Wuille1 [30] {C1/1/7}</b>}. That index was called blkindex.dat <b>{L8/12/1}</b> and included
-              information about all transactions that had occurred so far, including fully spent transactions, as well
-              as transactions with unspent outputs. The index would point the software to the relevant block data from
-              which the full raw transaction data could be obtained.</p>
+        all transactions in it are valid and are not already spent {see the Bitcoin White Paper at [5.5]
+        <b>{L5/26/3}</b>}. The initial release of the Bitcoin Software required there to be an index of historical
+        transactions to enable nodes to check whether the output of a transaction had already been spent
+        {<b>Wuille1 [30] {C1/1/7}</b>}. That index was called blkindex.dat <b>{L8/12/1}</b> and included
+        information about all transactions that had occurred so far, including fully spent transactions, as well
+        as transactions with unspent outputs. The index would point the software to the relevant block data from
+        which the full raw transaction data could be obtained.
+      </p>
 </div>
 </section>
 <section class="judgment-body__section" id="para_753"><span class="judgment-body__number">753.</span>
 <div>
 <p class="judgment-body__text judgment-body__no-margin-top">As a result of a patch authored by Dr Wuille,
-              and placed by him on GitHub by pull request 1677 in August 2012, a significant optimisation was proposed
-              to that approach. Because a spent transaction cannot be spent again, there was no need for nodes to check
-              new transactions against spent transactions. It was sufficient that nodes confirm that any new
-              transactions were of an unspent output from another transaction. As part of Dr Wuille’s pull request he
-              proposed replacing the transaction index with a database containing just the <u>unspent</u> transaction
-              outputs {<b>Wuille1 [30-31] {C1/1/7}</b>}.</p>
+        and placed by him on GitHub by pull request 1677 in August 2012, a significant optimisation was proposed
+        to that approach. Because a spent transaction cannot be spent again, there was no need for nodes to check
+        new transactions against spent transactions. It was sufficient that nodes confirm that any new
+        transactions were of an unspent output from another transaction. As part of Dr Wuille’s pull request he
+        proposed replacing the transaction index with a database containing just the <u>unspent</u> transaction
+        outputs {<b>Wuille1 [30-31] {C1/1/7}</b>}.</p>
 </div>
 </section>
 <section class="judgment-body__section" id="para_754"><span class="judgment-body__number">754.</span>
 <div>
 <p class="judgment-body__text judgment-body__no-margin-top">The change proposed by Dr Wuille was introduced
-              in version 0.8 of the Bitcoin Software in February 2013 and resulted in a major performance improvement in
-              the Bitcoin Software because (a) the unspent transaction database was much smaller given that it no longer
-              contained information about spent transactions and (b) there was no need any longer to look up the full
-              transaction data in the blockchain {<b>Wuille1 [30] {C1/1/7}</b>}. Dr Wuille’s change accordingly
-              introduced the concept of a pool of unspent transaction outputs. In addition, it introduced the concept of
-              unspent transaction output caching, by which the software kept a subset of the unspent transaction output
-              database cached in memory for faster access {<b>Wuille1 [31] {C1/1/8}</b>}.</p>
+        in version 0.8 of the Bitcoin Software in February 2013 and resulted in a major performance improvement in
+        the Bitcoin Software because (a) the unspent transaction database was much smaller given that it no longer
+        contained information about spent transactions and (b) there was no need any longer to look up the full
+        transaction data in the blockchain {<b>Wuille1 [30] {C1/1/7}</b>}. Dr Wuille’s change accordingly
+        introduced the concept of a pool of unspent transaction outputs. In addition, it introduced the concept of
+        unspent transaction output caching, by which the software kept a subset of the unspent transaction output
+        database cached in memory for faster access {<b>Wuille1 [31] {C1/1/8}</b>}.</p>
 </div>
 </section>
 <section class="judgment-body__section" id="para_755"><span class="judgment-body__number">755.</span>
 <div>
 <p class="judgment-body__text judgment-body__no-margin-top">It was in the context of the development of
-              Bitcoin’s treatment of unspent transaction outputs that the abbreviation “UTXO” came into being. Dr Wuille
-              explains that Alan Reiner (who went by the name etotheipi) was the first person to use it. On 21 June 2012
-              he posted a message on the developers’ chat that he was “<i>going to start using utxo to refer to
-                unspent-txout</i>” {<b>{D1/6/11}</b> at Row 437}. Even some months later, however, the expression had
-              not become well-established {see <b>Wuille1 [31] {C1/1/8}</b>}. In any event, there is no reference to the
-              expression UTXO in the Bitcoin White Paper, in the Bitcoin Software or its updates released by Satoshi
-              Nakamoto or in any of the voluminous emails and forum posts made by Satoshi Nakamoto.</p>
+        Bitcoin’s treatment of unspent transaction outputs that the abbreviation “UTXO” came into being. Dr Wuille
+        explains that Alan Reiner (who went by the name etotheipi) was the first person to use it. On 21 June 2012
+        he posted a message on the developers’ chat that he was “<i>going to start using utxo to refer to
+          unspent-txout</i>” {<b>{D1/6/11}</b> at Row 437}. Even some months later, however, the expression had
+        not become well-established {see <b>Wuille1 [31] {C1/1/8}</b>}. In any event, there is no reference to the
+        expression UTXO in the Bitcoin White Paper, in the Bitcoin Software or its updates released by Satoshi
+        Nakamoto or in any of the voluminous emails and forum posts made by Satoshi Nakamoto.</p>
 </div>
 </section>
 <section class="judgment-body__section" id="para_756"><span class="judgment-body__number">756.</span>
 <div>
 <p class="judgment-body__text judgment-body__no-margin-top">Professor Meiklejohn and Mr Gao were in
-              agreement that the term UTXO began to be adopted in 2012 or so {<b>Meiklejohn1, [45] {G/2/16</b>}, agreed
-              by Gao at <b>{Q/3/2}</b>} and Dr Wright appeared to confirm the position in his eleventh witness statement
-              at <b>Wright11, [578] {CSW/1/107}</b>. That, however, presented a difficulty for Dr Wright:</p>
+        agreement that the term UTXO began to be adopted in 2012 or so {<b>Meiklejohn1, [45] {G/2/16</b>}, agreed
+        by Gao at <b>{Q/3/2}</b>} and Dr Wright appeared to confirm the position in his eleventh witness statement
+        at <b>Wright11, [578] {CSW/1/107}</b>. That, however, presented a difficulty for Dr Wright:</p>
 <section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">756.1.</span></span>
 <div>
 <p class="judgment-body__text judgment-body__no-margin-top">The SEIR_C document refers explicitly to
-                  “UTXO caching” <b>{L3/237/13}</b>, to UTXO addresses <b>{L3/237/14}</b> and to the “UTXO pool”
-                  <b>{L3/237/15}</b>.</p>
+            “UTXO caching” <b>{L3/237/13}</b>, to UTXO addresses <b>{L3/237/14}</b> and to the “UTXO pool”
+            <b>{L3/237/15}</b>.
+          </p>
 </div>
 </section>
 <section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">756.2.</span></span>
 <div>
 <p class="judgment-body__text judgment-body__no-margin-top">A further reliance document alleged to come
-                  from 2008, Dr Wright’s Non-Sparse Random Graphs paper <b>{L3/230}</b>, includes a sub-heading
-                  referring to UTXO <b>{L3/230/4}</b>.</p>
+            from 2008, Dr Wright’s Non-Sparse Random Graphs paper <b>{L3/230}</b>, includes a sub-heading
+            referring to UTXO <b>{L3/230/4}</b>.</p>
 </div>
 </section>
 <section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">756.3.</span></span>
 <div>
 <p class="judgment-body__text judgment-body__no-margin-top">Even one of the documents on the BDO Image,
-                  which supposedly dates back to 2007 refers to the UTXO addresses and the “UTXO pool”
-                  <b>{PTR-F/39/1}</b>.</p>
+            which supposedly dates back to 2007 refers to the UTXO addresses and the “UTXO pool”
+            <b>{PTR-F/39/1}</b>.
+          </p>
 </div>
 </section>
 </div>
@@ -86,18 +95,18 @@
 <section class="judgment-body__section" id="para_757"><span class="judgment-body__number">757.</span>
 <div>
 <p class="judgment-body__text judgment-body__no-margin-top">Dr Wright’s response to this was to suggest that
-              Satoshi Nakamoto had used the expression UTXO because Dr Wright used it in those three documents. However,
-              the Developers estimated that around 1,000 emails or forum posts written by the real Satoshi Nakamoto are
-              available to the parties and the Court. They submitted that not a single one uses the expression UTXO –
-              and there was no contradiction on this point. Yet, according to Dr Wright, Satoshi is supposed to have
-              used the expression UTXO in 2008 in the precise manner in which UTXO came to be used in 2012 – with UTXO
-              caching and a UTXO pool - in those three documents. I do not find this to be credible.</p>
+        Satoshi Nakamoto had used the expression UTXO because Dr Wright used it in those three documents. However,
+        the Developers estimated that around 1,000 emails or forum posts written by the real Satoshi Nakamoto are
+        available to the parties and the Court. They submitted that not a single one uses the expression UTXO –
+        and there was no contradiction on this point. Yet, according to Dr Wright, Satoshi is supposed to have
+        used the expression UTXO in 2008 in the precise manner in which UTXO came to be used in 2012 – with UTXO
+        caching and a UTXO pool - in those three documents. I do not find this to be credible.</p>
 </div>
 </section>
 <section class="judgment-body__section" id="para_758"><span class="judgment-body__number">758.</span>
 <div>
 <p class="judgment-body__text judgment-body__no-margin-top">On this point Dr Wright’s evidence was nothing
-              more than mere assertion: </p>
+        more than mere assertion: </p>
 <blockquote>
 <section>
 <p><i>“139: 6 Q. And if we go to the top of page 15 {L3/237/15}, we can</i></p>
@@ -180,20 +189,21 @@
 <section class="judgment-body__section" id="para_759"><span class="judgment-body__number">759.</span>
 <div>
 <p class="judgment-body__text judgment-body__no-margin-top">Ignoring the irrelevant reference to iDaemon, Dr
-              Wright’s suggestion that he was referring to a different type of UTXO pool to that introduced by the
-              Ultraprune pull request made by Dr Wuille is contradicted by the document to which he was actually
-              referring. That document is specifically addressing the use of the UTXO pool for the purpose of checking
-              double-spending:</p>
+        Wright’s suggestion that he was referring to a different type of UTXO pool to that introduced by the
+        Ultraprune pull request made by Dr Wuille is contradicted by the document to which he was actually
+        referring. That document is specifically addressing the use of the UTXO pool for the purpose of checking
+        double-spending:</p>
 <section class="judgment-body__nested-section"><span class="judgment-body__number"></span>
 <div>
 <p class="judgment-body__text judgment-body__no-margin-top">“<i>In a double spend, a client attempts to
-                    spend the same ledger entry in two places, and to separate end addresses, at the same time. The
-                    nature of the protocol is such that only one of these competing transactions can be allocated and
-                    recorded into the blockchain. Once an amount has been removed from the UTXO pool, it cannot be used
-                    again.</i>” <b>{L3/237/15}</b></p>
+              spend the same ledger entry in two places, and to separate end addresses, at the same time. The
+              nature of the protocol is such that only one of these competing transactions can be allocated and
+              recorded into the blockchain. Once an amount has been removed from the UTXO pool, it cannot be used
+              again.</i>” <b>{L3/237/15}</b></p>
 </div>
 </section>
 </div>
 </section>
-<a href="./extracted_content_lvl_135.html">Next page</a></body>
+<a href="./extracted_content_lvl_135.html">Next page</a>
+</body>
 </html>
