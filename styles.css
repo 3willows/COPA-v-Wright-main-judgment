@@ -1,9 +1,10 @@
 /* Global Styles */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 20px;
+  padding: 20px;
   line-height: 1.6;
+  box-sizing: border-box;
 }
 
 /* Section Styles */
@@ -39,14 +40,16 @@ section#lvl_148 {
 @media (max-width: 768px) {
   body {
       font-size: 16px;
-  }
-  section#lvl_148 {
+      margin: 15px;
       padding: 15px;
   }
- .judgment-body__section {
+ section#lvl_148 {
+      padding: 15px;
+  }
+.judgment-body__section {
       margin-bottom: 20px;
   }
- .judgment-body__text {
+.judgment-body__text {
       margin-bottom: 10px;
   }
 }
@@ -54,14 +57,16 @@ section#lvl_148 {
 @media (max-width: 480px) {
   body {
       font-size: 14px;
-  }
-  section#lvl_148 {
+      margin: 10px;
       padding: 10px;
   }
- .judgment-body__section {
+ section#lvl_148 {
+      padding: 10px;
+  }
+.judgment-body__section {
       margin-bottom: 15px;
   }
- .judgment-body__text {
+.judgment-body__text {
       margin-bottom: 5px;
   }
 }
