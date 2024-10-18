@@ -1,9 +1,6 @@
 body {
   font-family: Arial, sans-serif;
   margin: 1em;
-  /* Using em for margin */
-  padding: 1em;
-  /* Using em for padding */
   line-height: 1.5;
   box-sizing: border-box;
   font-size: 1.2rem;
@@ -15,10 +12,8 @@ body {
 .judgment-body__section span.judgment-body__number {
   font-weight: bold;
   margin-right: 1em;
-  /* Using em for margin */
 }
 
-/* Style for anchors */
 a {
   text-decoration: none;
   /* Remove underline */
@@ -53,13 +48,11 @@ a:hover {
 @media (max-width: 768px) {
   body {
     font-size: max(20px, 1.5rem);
-    /* Ensure font size is at least 22px */
   }
 }
 
 @media (max-width: 480px) {
   body {
     font-size: max(20px, 1.8rem);
-    /* Ensure font size is at least 22px */
   }
 }
