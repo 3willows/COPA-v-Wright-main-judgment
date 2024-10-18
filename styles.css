@@ -31,7 +31,7 @@ section {
 /* Responsive Design */
 @media (max-width: 768px) {
   body {
-    font-size: min(22px, 1.5rem); /* Ensure font size is at least 22px */
+    font-size: max(22px, 1.5rem); /* Ensure font size is at least 22px */
   }
 }
 
