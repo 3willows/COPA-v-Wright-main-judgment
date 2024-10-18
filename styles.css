@@ -16,6 +16,17 @@ body {
   /* Using em for margin */
 }
 
+/* Style for anchors */
+a {
+  text-decoration: none; /* Remove underline */
+  color: #337ab7; /* Default link color */
+  transition: color 0.2s ease; /* Smooth color transition */
+}
+
+a:hover {
+  color: #23527c; /* Hover link color */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   body {
