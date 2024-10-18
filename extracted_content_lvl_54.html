@@ -1,68 +1,63 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en"><head><title>Hash Functions</title></head>
 <body>
 <section id="lvl_54">
-          <p><b>Hash Functions</b></p>
-        </section>
-        <section class="judgment-body__section" id="para_311"><span class="judgment-body__number">311.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">A cryptographic hash function is a function,
+<p><b>Hash Functions</b></p>
+</section>
+<section class="judgment-body__section" id="para_311"><span class="judgment-body__number">311.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">A cryptographic hash function is a function,
               which can be denoted as H, that has the following properties: </p>
-            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                  style="font-style:normal;font-weight:normal">311.1.</span></span>
-              <div>
-                <p class="judgment-body__text judgment-body__no-margin-top">It takes in inputs of arbitrary size
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">311.1.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">It takes in inputs of arbitrary size
                   (meaning that they can be nearly any size and the size does not matter in practice). </p>
-              </div>
-            </section>
-            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                  style="font-style:normal;font-weight:normal">311.2.</span></span>
-              <div>
-                <p class="judgment-body__text judgment-body__no-margin-top">It produces an output of some fixed size.
+</div>
+</section>
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">311.2.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">It produces an output of some fixed size.
                 </p>
-              </div>
-            </section>
-            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                  style="font-style:normal;font-weight:normal">311.3.</span></span>
-              <div>
-                <p class="judgment-body__text judgment-body__no-margin-top">It is efficiently computable, meaning given
+</div>
+</section>
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">311.3.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">It is efficiently computable, meaning given
                   any input it is fast to compute the output. </p>
-              </div>
-            </section>
-            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                  style="font-style:normal;font-weight:normal">311.4.</span></span>
-              <div>
-                <p class="judgment-body__text judgment-body__no-margin-top">It is pre-image resistant. This means that
+</div>
+</section>
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">311.4.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">It is pre-image resistant. This means that
                   given a hash h it is hard to find an input x such that H(x) = h. </p>
-              </div>
-            </section>
-            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                  style="font-style:normal;font-weight:normal">311.5.</span></span>
-              <div>
-                <p class="judgment-body__text judgment-body__no-margin-top">It is collision resistant. This means that
+</div>
+</section>
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">311.5.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">It is collision resistant. This means that
                   it is hard to find two different inputs x and y such that H(x) = H(y). </p>
-              </div>
-            </section>
-          </div>
-        </section>
-        <section class="judgment-body__section" id="para_312"><span class="judgment-body__number">312.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">The most used hash function today is SHA256, and
+</div>
+</section>
+</div>
+</section>
+<section class="judgment-body__section" id="para_312"><span class="judgment-body__number">312.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">The most used hash function today is SHA256, and
               this is what Bitcoin uses. SHA256 hashes are usually encoded and expressed as a string containing 64
               alphanumeric characters, such as the string
               2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824 (the hex encoding of the SHA256 hash of
               “hello”).</p>
-          </div>
-        </section>
-        <section class="judgment-body__section" id="para_313"><span class="judgment-body__number">313.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">The Bitcoin White Paper defines a coin as “a
+</div>
+</section>
+<section class="judgment-body__section" id="para_313"><span class="judgment-body__number">313.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">The Bitcoin White Paper defines a coin as “a
               chain of digital signatures”. An owner transfers a coin by “digitally signing” a “hash” of the previous
               transaction involving the coin and the public key of the next owner. Because the hash used in a
               transaction includes both the previous transaction involving the coin and the public key of the next
               owner, the hash embeds the history of expenditure of that coin.</p>
-          </div>
-        </section>
-        
+</div>
+</section>
 </body>
 </html>

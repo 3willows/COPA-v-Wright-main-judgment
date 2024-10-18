@@ -1,100 +1,96 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en"><head><title>Digital Signatures</title></head>
 <body>
 <section id="lvl_55">
-          <p><b>Digital Signatures</b></p>
-        </section>
-        <section class="judgment-body__section" id="para_314"><span class="judgment-body__number">314.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">A digital signature is an example of an
+<p><b>Digital Signatures</b></p>
+</section>
+<section class="judgment-body__section" id="para_314"><span class="judgment-body__number">314.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">A digital signature is an example of an
               asymmetric or public-key cryptographic primitive. It operates using two related keys, a public and a
               private one. The public one can be given to anyone, and the pair is known as a keypair. A digital
               signature acts to verify the signing of a given message and involves three algorithms: KeyGen, Sign and
               Verify. Their interaction was illustrated by Professor Meiklejohn in her Figure 1:</p>
-            <section class="judgment-body__nested-section"><span class="judgment-body__number"></span>
-              <div>
-                <p class="judgment-body__text judgment-body__no-margin-top"><img
-                    src="https://tna-caselaw-assets.s3.eu-west-2.amazonaws.com/ewhc/ch/2024/1198/image2.png"
-                    style="width:451.3pt;height:160.5pt"></p>
-                <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                      style="font-style:normal;font-weight:normal">314.1.</span></span>
-                  <div>
-                    <p class="judgment-body__text judgment-body__no-margin-top">KeyGen is a randomised algorithm that
+<section class="judgment-body__nested-section"><span class="judgment-body__number"></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top"><img src="https://tna-caselaw-assets.s3.eu-west-2.amazonaws.com/ewhc/ch/2024/1198/image2.png" style="width:451.3pt;height:160.5pt"/></p>
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">314.1.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">KeyGen is a randomised algorithm that
                       produces two keys: a private key (sk) and a public key (pk). Each time KeyGen is run, it produces
                       a new keypair. These keys have the property that it is hard to compute the private key given only
                       the public key. </p>
-                  </div>
-                </section>
-                <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                      style="font-style:normal;font-weight:normal">314.2.</span></span>
-                  <div>
-                    <p class="judgment-body__text judgment-body__no-margin-top">Sign is a randomised algorithm that
+</div>
+</section>
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">314.2.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">Sign is a randomised algorithm that
                       allows the holder of the private key to produce a signature (σ) on some message (m). </p>
-                  </div>
-                </section>
-                <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                      style="font-style:normal;font-weight:normal">314.3.</span></span>
-                  <div>
-                    <p class="judgment-body__text judgment-body__no-margin-top">Verify is a deterministic algorithm
+</div>
+</section>
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">314.3.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">Verify is a deterministic algorithm
                       which allows anyone in possession of the public key to verify that the signer produced a valid
                       signature on a given message. It outputs 0 if the signature does not verify and 1 if it does.</p>
-                  </div>
-                </section>
-              </div>
-            </section>
-          </div>
-        </section>
-        <section class="judgment-body__section" id="para_315"><span class="judgment-body__number">315.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">There are several standardised digital signature
+</div>
+</section>
+</div>
+</section>
+</div>
+</section>
+<section class="judgment-body__section" id="para_315"><span class="judgment-body__number">315.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">There are several standardised digital signature
               schemes, with the one being used in Bitcoin known as ECDSA (Elliptic Curve Digital Signature Algorithm).
               The curve used in Bitcoin is secp256k1, and ECDSA signatures are usually encoded and expressed as 64
               alphanumeric characters.</p>
-          </div>
-        </section>
-        <section class="judgment-body__section" id="para_316"><span class="judgment-body__number">316.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">So, digital signature is a process designed to
+</div>
+</section>
+<section class="judgment-body__section" id="para_316"><span class="judgment-body__number">316.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">So, digital signature is a process designed to
               provide confidence that an entity has signed a given message. A randomised algorithm (Sign) allows the
               holder of a private key (one of the outputs of KeyGen) to produce a signature (σ) on a message (m). The
               recipient of a digital signature uses a deterministic verification algorithm (Verify) to check whether the
               signature conforms to the public key of the sender. The digital signature of a transaction involving
               bitcoins enables the recipient (R) to be satisfied that the sender was entitled to transfer the relevant
               sum.</p>
-          </div>
-        </section>
-        <section class="judgment-body__section" id="para_317"><span class="judgment-body__number">317.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">However, if the transaction process ended at
+</div>
+</section>
+<section class="judgment-body__section" id="para_317"><span class="judgment-body__number">317.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">However, if the transaction process ended at
               that point, the ‘<i>double-spending problem’ </i>would remain and the solution to this problem in the
               Bitcoin White Paper was the use of a peer-to-peer distributed timestamp server to generate computational
               proof of the chronological order of transactions using a ‘<i>proof-of-work’ </i>system.</p>
-          </div>
-        </section>
-        <section class="judgment-body__section" id="para_318"><span class="judgment-body__number">318.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">Section 4 of the Bitcoin White Paper is headed
+</div>
+</section>
+<section class="judgment-body__section" id="para_318"><span class="judgment-body__number">318.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">Section 4 of the Bitcoin White Paper is headed
               ‘Proof-of-Work’ and it explained:</p>
-            <blockquote>
-              <section>
-                <p><i>‘To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a
+<blockquote>
+<section>
+<p><i>‘To implement a distributed timestamp server on a peer-to-peer basis, we will need to use a
                     proof-of-work system similar to Adam Back's Hashcash [6], rather than newspaper or Usenet posts. The
                     proof-of-work involves scanning for a value that when hashed, such as with SHA-256, the hash begins
                     with a number of zero bits. The average work required is exponential in the number of zero bits
                     required and can be verified by executing a single hash. </i></p>
-              </section>
-              <section>
-                <p><i>For our timestamp network, we implement the proof-of-work by incrementing a nonce in the block
+</section>
+<section>
+<p><i>For our timestamp network, we implement the proof-of-work by incrementing a nonce in the block
                     until a value is found that gives the block's hash the required zero bits. Once the CPU effort has
                     been expended to make it satisfy the proof-of-work, the block cannot be changed without redoing the
                     work. …’</i></p>
-              </section>
-            </blockquote>
-          </div>
-        </section>
-        <section class="judgment-body__section" id="para_319"><span class="judgment-body__number">319.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">However, when it came to the Bitcoin Source
+</section>
+</blockquote>
+</div>
+</section>
+<section class="judgment-body__section" id="para_319"><span class="judgment-body__number">319.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">However, when it came to the Bitcoin Source
               Code, Satoshi implemented an improved proof-of-work function which departed from the system described in
               the Bitcoin White Paper, which contemplated that the target value would be set with leading zeros – as in
               Dr Adam Back’s ‘Hashcash’ paper. Instead, the code used a numerical comparison (whether the hash of a
@@ -103,8 +99,7 @@
               hex or any other base. However, the improvement meant that the target number could be set precisely, which
               in turn allowed the difficulty to be very precisely adjusted. This improvement is relevant to an issue
               raised in the cross-examination of Dr Back which I address later.</p>
-          </div>
-        </section>
-        
+</div>
+</section>
 </body>
 </html>

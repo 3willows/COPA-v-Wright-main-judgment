@@ -1,158 +1,153 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en"><head><title>CheckBlock</title></head>
 <body>
 <section id="lvl_120">
-          <p><i>CheckBlock</i></p>
-        </section>
-        <section class="judgment-body__section" id="para_651"><span class="judgment-body__number">651.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">As for the CheckBlock function, the Developers
+<p><i>CheckBlock</i></p>
+</section>
+<section class="judgment-body__section" id="para_651"><span class="judgment-body__number">651.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">As for the CheckBlock function, the Developers
               submitted this was one of <u>the</u> key functions in the Bitcoin Source Code, being the first stage in
               the processing of blocks under the ProcessBlock function in the main.cpp file, followed by AcceptBlock. I
               agree.</p>
-          </div>
-        </section>
-        <section class="judgment-body__section" id="para_652"><span class="judgment-body__number">652.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">In the original source code, CheckBlock is
+</div>
+</section>
+<section class="judgment-body__section" id="para_652"><span class="judgment-body__number">652.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">In the original source code, CheckBlock is
               comprised of six steps, each preceded with a single line comment as follows:</p>
-            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                  style="font-style:normal;font-weight:normal">652.1.</span></span>
-              <div>
-                <p class="judgment-body__text judgment-body__no-margin-top">// Size limits</p>
-              </div>
-            </section>
-            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                  style="font-style:normal;font-weight:normal">652.2.</span></span>
-              <div>
-                <p class="judgment-body__text judgment-body__no-margin-top">// Check timestamp</p>
-              </div>
-            </section>
-            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                  style="font-style:normal;font-weight:normal">652.3.</span></span>
-              <div>
-                <p class="judgment-body__text judgment-body__no-margin-top">// First transaction must be coinbase, the
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">652.1.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">// Size limits</p>
+</div>
+</section>
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">652.2.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">// Check timestamp</p>
+</div>
+</section>
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">652.3.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">// First transaction must be coinbase, the
                   rest must not be</p>
-              </div>
-            </section>
-            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                  style="font-style:normal;font-weight:normal">652.4.</span></span>
-              <div>
-                <p class="judgment-body__text judgment-body__no-margin-top">// Check transactions</p>
-              </div>
-            </section>
-            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                  style="font-style:normal;font-weight:normal">652.5.</span></span>
-              <div>
-                <p class="judgment-body__text judgment-body__no-margin-top">// Check proof of work matches claimed
+</div>
+</section>
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">652.4.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">// Check transactions</p>
+</div>
+</section>
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">652.5.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">// Check proof of work matches claimed
                   amount</p>
-              </div>
-            </section>
-            <section class="judgment-body__nested-section"><span class="judgment-body__number"><span
-                  style="font-style:normal;font-weight:normal">652.6.</span></span>
-              <div>
-                <p class="judgment-body__text judgment-body__no-margin-top">// Check merkleroot</p>
-              </div>
-            </section>
-          </div>
-        </section>
-        <section class="judgment-body__section" id="para_653"><span class="judgment-body__number">653.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">Each of those single line comments, save the
+</div>
+</section>
+<section class="judgment-body__nested-section"><span class="judgment-body__number"><span style="font-style:normal;font-weight:normal">652.6.</span></span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">// Check merkleroot</p>
+</div>
+</section>
+</div>
+</section>
+<section class="judgment-body__section" id="para_653"><span class="judgment-body__number">653.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">Each of those single line comments, save the
               fourth, provides a summary description of the checks that the relevant function undertakes that anybody
               with a basic understanding of Bitcoin could surmise. The fourth “Check transactions” is more ambiguous. Dr
               Wright was invited to explain what it comprised. He answered as follows:</p>
-            <blockquote>
-              <section>
-                <p><i>“123: 6 Q. And then, fourthly, we can see that it checked</i></p>
-              </section>
-              <section>
-                <p><i> 7 transactions?</i></p>
-              </section>
-              <section>
-                <p><i> 8 A. Yes.</i></p>
-              </section>
-              <section>
-                <p><i> 9 Q. What was that?</i></p>
-              </section>
-              <section>
-                <p><i> 10 A. That it checks transactions?</i></p>
-              </section>
-              <section>
-                <p><i> 11 Q. Yes, what was the check of the transactions?</i></p>
-              </section>
-              <section>
-                <p><i> 12 A. Basically making sure that they are valid, that</i></p>
-              </section>
-              <section>
-                <p><i> 13 the transactions that have been received follow</i></p>
-              </section>
-              <section>
-                <p><i> 14 the rules, etc.</i></p>
-              </section>
-              <section>
-                <p><i> 15 Q. So what sort of thing?</i></p>
-              </section>
-              <section>
-                <p><i> 16 A. What sort of thing. So, basically, Bitcoin uses script.</i></p>
-              </section>
-              <section>
-                <p><i> 17 The way that you'd have to then check would be does</i></p>
-              </section>
-              <section>
-                <p><i> 18 the key work, does other policies work, are the output</i></p>
-              </section>
-              <section>
-                <p><i> 19 and script valid. It's a predicate. So, what we're</i></p>
-              </section>
-              <section>
-                <p><i> 20 functionally doing in here is ensuring that all of</i></p>
-              </section>
-              <section>
-                <p><i> 21 the input and output is structured correctly, that if</i></p>
-              </section>
-              <section>
-                <p><i> 22 there's a message with an ECDSA key that the correct</i></p>
-              </section>
-              <section>
-                <p><i> 23 previous block had been signed.</i></p>
-              </section>
-              <section>
-                <p><i> 24 Q. So I remember you talking the other day -- I can't</i></p>
-              </section>
-              <section>
-                <p><i> 25 remember which day it was -- about how, when you were</i></p>
-              </section>
-              <section>
-                <p><i>124: 1 first running the Bitcoin Software, it hadn't been --</i></p>
-              </section>
-              <section>
-                <p><i> 2 the mining that had been absorbing all of your</i></p>
-              </section>
-              <section>
-                <p><i> 3 electricity, as it were, it was doing ECDSA checks in</i></p>
-              </section>
-              <section>
-                <p><i> 4 relation to the underlying transactions; is that right?</i></p>
-              </section>
-              <section>
-                <p><i> 5 A. And much more.</i></p>
-              </section>
-              <section>
-                <p><i> 6 Q. Okay, but when you're talking about ECDSA checking, is</i></p>
-              </section>
-              <section>
-                <p><i> 7 that what you're talking about in relation to --</i></p>
-              </section>
-              <section>
-                <p><i> 8 A. That particular part, yes.”</i></p>
-              </section>
-            </blockquote>
-          </div>
-        </section>
-        <section class="judgment-body__section" id="para_654"><span class="judgment-body__number">654.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">The Developers submitted that this description
+<blockquote>
+<section>
+<p><i>“123: 6 Q. And then, fourthly, we can see that it checked</i></p>
+</section>
+<section>
+<p><i> 7 transactions?</i></p>
+</section>
+<section>
+<p><i> 8 A. Yes.</i></p>
+</section>
+<section>
+<p><i> 9 Q. What was that?</i></p>
+</section>
+<section>
+<p><i> 10 A. That it checks transactions?</i></p>
+</section>
+<section>
+<p><i> 11 Q. Yes, what was the check of the transactions?</i></p>
+</section>
+<section>
+<p><i> 12 A. Basically making sure that they are valid, that</i></p>
+</section>
+<section>
+<p><i> 13 the transactions that have been received follow</i></p>
+</section>
+<section>
+<p><i> 14 the rules, etc.</i></p>
+</section>
+<section>
+<p><i> 15 Q. So what sort of thing?</i></p>
+</section>
+<section>
+<p><i> 16 A. What sort of thing. So, basically, Bitcoin uses script.</i></p>
+</section>
+<section>
+<p><i> 17 The way that you'd have to then check would be does</i></p>
+</section>
+<section>
+<p><i> 18 the key work, does other policies work, are the output</i></p>
+</section>
+<section>
+<p><i> 19 and script valid. It's a predicate. So, what we're</i></p>
+</section>
+<section>
+<p><i> 20 functionally doing in here is ensuring that all of</i></p>
+</section>
+<section>
+<p><i> 21 the input and output is structured correctly, that if</i></p>
+</section>
+<section>
+<p><i> 22 there's a message with an ECDSA key that the correct</i></p>
+</section>
+<section>
+<p><i> 23 previous block had been signed.</i></p>
+</section>
+<section>
+<p><i> 24 Q. So I remember you talking the other day -- I can't</i></p>
+</section>
+<section>
+<p><i> 25 remember which day it was -- about how, when you were</i></p>
+</section>
+<section>
+<p><i>124: 1 first running the Bitcoin Software, it hadn't been --</i></p>
+</section>
+<section>
+<p><i> 2 the mining that had been absorbing all of your</i></p>
+</section>
+<section>
+<p><i> 3 electricity, as it were, it was doing ECDSA checks in</i></p>
+</section>
+<section>
+<p><i> 4 relation to the underlying transactions; is that right?</i></p>
+</section>
+<section>
+<p><i> 5 A. And much more.</i></p>
+</section>
+<section>
+<p><i> 6 Q. Okay, but when you're talking about ECDSA checking, is</i></p>
+</section>
+<section>
+<p><i> 7 that what you're talking about in relation to --</i></p>
+</section>
+<section>
+<p><i> 8 A. That particular part, yes.”</i></p>
+</section>
+</blockquote>
+</div>
+</section>
+<section class="judgment-body__section" id="para_654"><span class="judgment-body__number">654.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">The Developers submitted that this description
               by Dr Wright of the “Check transactions” stage of the CheckBlock function (namely that the signature of
               transactions was checked) was hopelessly wrong, on the basis that the checks in “Check transactions” are
               set out in the main.h file at {L4/98.1/8}. Dr Wright was taken to them {Day8/124:18-p125:9}: they comprise
@@ -160,209 +155,208 @@
               output to a transaction, (b) the value of created UTXOs was not negative, and (c) if it was a coinbase
               transaction that the scriptSig was of the right size and, if it was not a coinbase transaction, that its
               input is not null.</p>
-          </div>
-        </section>
-        <section class="judgment-body__section" id="para_655"><span class="judgment-body__number">655.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">However, Dr Wright persisted in suggesting that
+</div>
+</section>
+<section class="judgment-body__section" id="para_655"><span class="judgment-body__number">655.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">However, Dr Wright persisted in suggesting that
               the CheckBlock function still checked the signatures of transactions in some mysterious, unexplained
               manner:</p>
-            <blockquote>
-              <section>
-                <p><i>“125:10 Q. It did not involve checking ECDSA signatures, did it?</i></p>
-              </section>
-              <section>
-                <p><i> 11 A. Again, that then calls these other functions.</i></p>
-              </section>
-              <section>
-                <p><i> 12 Q. Dr Wright, you're wrong about that?</i></p>
-              </section>
-              <section>
-                <p><i> 13 A. I am not wrong about that. If you note this,</i></p>
-              </section>
-              <section>
-                <p><i> 14 the diagram that you had is hierarchical. So, that</i></p>
-              </section>
-              <section>
-                <p><i> 15 particular function calls the next function, and when</i></p>
-              </section>
-              <section>
-                <p><i> 16 you're talking about checking CheckSig in that</i></p>
-              </section>
-              <section>
-                <p><i> 17 particular one, then that's ECDSA, but it's not in that</i></p>
-              </section>
-              <section>
-                <p><i> 18 core.</i></p>
-              </section>
-              <section>
-                <p><i> 19 Q. You see, Dr Wright, this is a pretty central core point</i></p>
-              </section>
-              <section>
-                <p><i> 20 in relation to the operation of the Bitcoin Software and</i></p>
-              </section>
-              <section>
-                <p><i> 21 you don't know about it, do you?</i></p>
-              </section>
-              <section>
-                <p><i> 22 A. Actually, I do, and you're not letting me explain it</i></p>
-              </section>
-              <section>
-                <p><i> 23 properly.</i></p>
-              </section>
-              <section>
-                <p><i> 24 Q. I'm going to explain it to you. Can we go, please, to</i></p>
-              </section>
-              <section>
-                <p><i> 25 {L4/97.1/23}. Sorry, 98.1, I think, it is, page 23</i></p>
-              </section>
-              <section>
-                <p><i>126: 1 {L4/98.1/23}. No, 97.1, page 23 {L4/97.1/23}.</i></p>
-              </section>
-              <section>
-                <p><i> 2 So, do you see here that we can see a function which</i></p>
-              </section>
-              <section>
-                <p><i> 3 is described as "ProcessBlock"?</i></p>
-              </section>
-              <section>
-                <p><i> 4 A. I do.</i></p>
-              </section>
-              <section>
-                <p><i> 5 Q. And do you see underneath that, the preliminary check</i></p>
-              </section>
-              <section>
-                <p><i> 6 that it does is called "CheckBlock"?</i></p>
-              </section>
-              <section>
-                <p><i> 7 A. I do.</i></p>
-              </section>
-              <section>
-                <p><i> 8 Q. And do you see that a secondary check, after CheckBlock</i></p>
-              </section>
-              <section>
-                <p><i> 9 has been completed, is called "AcceptBlock"?</i></p>
-              </section>
-              <section>
-                <p><i> 10 A. I do.</i></p>
-              </section>
-              <section>
-                <p><i> 11 Q. Now, it is within AcceptBlock that the signatures are</i></p>
-              </section>
-              <section>
-                <p><i> 12 checked, isn't it?</i></p>
-              </section>
-              <section>
-                <p><i> 13 A. Basically what we have is a series of functions that</i></p>
-              </section>
-              <section>
-                <p><i> 14 each of these call other functions. So, where you're</i></p>
-              </section>
-              <section>
-                <p><i> 15 trying to say that each of these don't do all of that,</i></p>
-              </section>
-              <section>
-                <p><i> 16 the diagram that these guys don't like is a functional</i></p>
-              </section>
-              <section>
-                <p><i> 17 call mapping each of these areas down.</i></p>
-              </section>
-              <section>
-                <p><i> 18 Q. I'm not asking you about any diagrams, I'm asking you</i></p>
-              </section>
-              <section>
-                <p><i> 19 about what is in the CheckBlock function, and you told</i></p>
-              </section>
-              <section>
-                <p><i> 20 me that within the CheckBlock function were checks of</i></p>
-              </section>
-              <section>
-                <p><i> 21 ECDSA signatures.</i></p>
-              </section>
-              <section>
-                <p><i> 22 A. If it's a header and everything else is underneath it,</i></p>
-              </section>
-              <section>
-                <p><i> 23 then that is part of the entire function and you are</i></p>
-              </section>
-              <section>
-                <p><i> 24 checking everything. So when you have one function</i></p>
-              </section>
-              <section>
-                <p><i> 25 follow another to be correct, then all of those</i></p>
-              </section>
-              <section>
-                <p><i>127: 1 sub functions are part of the same function.</i></p>
-              </section>
-              <section>
-                <p><i> 2 Q. I'm afraid you're wrong, Dr Wright. If we want to</i></p>
-              </section>
-              <section>
-                <p><i> 3 explore how you get to signatures from the AcceptBlock</i></p>
-              </section>
-              <section>
-                <p><i> 4 function, I can take you there. Do you want me to do</i></p>
-              </section>
-              <section>
-                <p><i> 5 that?</i></p>
-              </section>
-              <section>
-                <p><i> 6 A. Like I said, the block includes both the full check and</i></p>
-              </section>
-              <section>
-                <p><i> 7 each of these. So when you have a transaction that you</i></p>
-              </section>
-              <section>
-                <p><i> 8 have checked, it then goes into the block and it's put</i></p>
-              </section>
-              <section>
-                <p><i> 9 into a binary tree structure. All of that is checked as</i></p>
-              </section>
-              <section>
-                <p><i> 10 part of the entire function. What you're doing is</i></p>
-              </section>
-              <section>
-                <p><i> 11 pulling out each individual call and saying that it's</i></p>
-              </section>
-              <section>
-                <p><i> 12 separate. It isn't.</i></p>
-              </section>
-              <section>
-                <p><i> 13 Q. We have looked at what the CheckBlock function contains</i></p>
-              </section>
-              <section>
-                <p><i> 14 and you have said it contains an ECDSA signature check.</i></p>
-              </section>
-              <section>
-                <p><i> 15 It doesn't, does it?</i></p>
-              </section>
-              <section>
-                <p><i> 16 A. That's not what I said.</i></p>
-              </section>
-              <section>
-                <p><i> 17 Q. Well, we can see what you said.</i></p>
-              </section>
-              <section>
-                <p><i> 18 A. What I said was, the function includes all of</i></p>
-              </section>
-              <section>
-                <p><i> 19 the processes in that. CheckBlock doesn't work unless</i></p>
-              </section>
-              <section>
-                <p><i> 20 each of the called functions are there.”</i></p>
-              </section>
-            </blockquote>
-          </div>
-        </section>
-        <section class="judgment-body__section" id="para_656"><span class="judgment-body__number">656.</span>
-          <div>
-            <p class="judgment-body__text judgment-body__no-margin-top">In summary, the check of signatures of
+<blockquote>
+<section>
+<p><i>“125:10 Q. It did not involve checking ECDSA signatures, did it?</i></p>
+</section>
+<section>
+<p><i> 11 A. Again, that then calls these other functions.</i></p>
+</section>
+<section>
+<p><i> 12 Q. Dr Wright, you're wrong about that?</i></p>
+</section>
+<section>
+<p><i> 13 A. I am not wrong about that. If you note this,</i></p>
+</section>
+<section>
+<p><i> 14 the diagram that you had is hierarchical. So, that</i></p>
+</section>
+<section>
+<p><i> 15 particular function calls the next function, and when</i></p>
+</section>
+<section>
+<p><i> 16 you're talking about checking CheckSig in that</i></p>
+</section>
+<section>
+<p><i> 17 particular one, then that's ECDSA, but it's not in that</i></p>
+</section>
+<section>
+<p><i> 18 core.</i></p>
+</section>
+<section>
+<p><i> 19 Q. You see, Dr Wright, this is a pretty central core point</i></p>
+</section>
+<section>
+<p><i> 20 in relation to the operation of the Bitcoin Software and</i></p>
+</section>
+<section>
+<p><i> 21 you don't know about it, do you?</i></p>
+</section>
+<section>
+<p><i> 22 A. Actually, I do, and you're not letting me explain it</i></p>
+</section>
+<section>
+<p><i> 23 properly.</i></p>
+</section>
+<section>
+<p><i> 24 Q. I'm going to explain it to you. Can we go, please, to</i></p>
+</section>
+<section>
+<p><i> 25 {L4/97.1/23}. Sorry, 98.1, I think, it is, page 23</i></p>
+</section>
+<section>
+<p><i>126: 1 {L4/98.1/23}. No, 97.1, page 23 {L4/97.1/23}.</i></p>
+</section>
+<section>
+<p><i> 2 So, do you see here that we can see a function which</i></p>
+</section>
+<section>
+<p><i> 3 is described as "ProcessBlock"?</i></p>
+</section>
+<section>
+<p><i> 4 A. I do.</i></p>
+</section>
+<section>
+<p><i> 5 Q. And do you see underneath that, the preliminary check</i></p>
+</section>
+<section>
+<p><i> 6 that it does is called "CheckBlock"?</i></p>
+</section>
+<section>
+<p><i> 7 A. I do.</i></p>
+</section>
+<section>
+<p><i> 8 Q. And do you see that a secondary check, after CheckBlock</i></p>
+</section>
+<section>
+<p><i> 9 has been completed, is called "AcceptBlock"?</i></p>
+</section>
+<section>
+<p><i> 10 A. I do.</i></p>
+</section>
+<section>
+<p><i> 11 Q. Now, it is within AcceptBlock that the signatures are</i></p>
+</section>
+<section>
+<p><i> 12 checked, isn't it?</i></p>
+</section>
+<section>
+<p><i> 13 A. Basically what we have is a series of functions that</i></p>
+</section>
+<section>
+<p><i> 14 each of these call other functions. So, where you're</i></p>
+</section>
+<section>
+<p><i> 15 trying to say that each of these don't do all of that,</i></p>
+</section>
+<section>
+<p><i> 16 the diagram that these guys don't like is a functional</i></p>
+</section>
+<section>
+<p><i> 17 call mapping each of these areas down.</i></p>
+</section>
+<section>
+<p><i> 18 Q. I'm not asking you about any diagrams, I'm asking you</i></p>
+</section>
+<section>
+<p><i> 19 about what is in the CheckBlock function, and you told</i></p>
+</section>
+<section>
+<p><i> 20 me that within the CheckBlock function were checks of</i></p>
+</section>
+<section>
+<p><i> 21 ECDSA signatures.</i></p>
+</section>
+<section>
+<p><i> 22 A. If it's a header and everything else is underneath it,</i></p>
+</section>
+<section>
+<p><i> 23 then that is part of the entire function and you are</i></p>
+</section>
+<section>
+<p><i> 24 checking everything. So when you have one function</i></p>
+</section>
+<section>
+<p><i> 25 follow another to be correct, then all of those</i></p>
+</section>
+<section>
+<p><i>127: 1 sub functions are part of the same function.</i></p>
+</section>
+<section>
+<p><i> 2 Q. I'm afraid you're wrong, Dr Wright. If we want to</i></p>
+</section>
+<section>
+<p><i> 3 explore how you get to signatures from the AcceptBlock</i></p>
+</section>
+<section>
+<p><i> 4 function, I can take you there. Do you want me to do</i></p>
+</section>
+<section>
+<p><i> 5 that?</i></p>
+</section>
+<section>
+<p><i> 6 A. Like I said, the block includes both the full check and</i></p>
+</section>
+<section>
+<p><i> 7 each of these. So when you have a transaction that you</i></p>
+</section>
+<section>
+<p><i> 8 have checked, it then goes into the block and it's put</i></p>
+</section>
+<section>
+<p><i> 9 into a binary tree structure. All of that is checked as</i></p>
+</section>
+<section>
+<p><i> 10 part of the entire function. What you're doing is</i></p>
+</section>
+<section>
+<p><i> 11 pulling out each individual call and saying that it's</i></p>
+</section>
+<section>
+<p><i> 12 separate. It isn't.</i></p>
+</section>
+<section>
+<p><i> 13 Q. We have looked at what the CheckBlock function contains</i></p>
+</section>
+<section>
+<p><i> 14 and you have said it contains an ECDSA signature check.</i></p>
+</section>
+<section>
+<p><i> 15 It doesn't, does it?</i></p>
+</section>
+<section>
+<p><i> 16 A. That's not what I said.</i></p>
+</section>
+<section>
+<p><i> 17 Q. Well, we can see what you said.</i></p>
+</section>
+<section>
+<p><i> 18 A. What I said was, the function includes all of</i></p>
+</section>
+<section>
+<p><i> 19 the processes in that. CheckBlock doesn't work unless</i></p>
+</section>
+<section>
+<p><i> 20 each of the called functions are there.”</i></p>
+</section>
+</blockquote>
+</div>
+</section>
+<section class="judgment-body__section" id="para_656"><span class="judgment-body__number">656.</span>
+<div>
+<p class="judgment-body__text judgment-body__no-margin-top">In summary, the check of signatures of
               transactions was not part of the CheckBlock stage of the ProcessBlock function. It was carried out in the
               AcceptBlock stage as was demonstrated to Dr Wright at <b>{Day8/127-129}</b>. I agree with the Developers
               that Satoshi would not have got these points wrong and so this is another indication that Dr Wright did
               not write the Bitcoin Source Code. </p>
-          </div>
-        </section>
-        
+</div>
+</section>
 </body>
 </html>
