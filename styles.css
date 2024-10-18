@@ -1,29 +1,16 @@
-/* Global Styles */
-html {
-  font-size: 22px; /* Base font size in px */
-}
-
 body {
   font-family: Arial, sans-serif;
   margin: 2em; /* Using em for margin */
   padding: 2em; /* Using em for padding */
   line-height: 1.6;
   box-sizing: border-box;
-  font-size: 1rem; /* Relative font size */
+  font-size: 1.2rem; /* Setting a base font size in rem */
 }
 
-/* Section Styles */
 section {
   margin-bottom: 2em; /* Using em for margin */
 }
 
-section#lvl_148 {
-  background-color: #f4f4f4;
-  padding: 2em; /* Using em for padding */
-  border-bottom: 1px solid #ccc;
-}
-
-/* Judgment Body Section Styles */
 .judgment-body__section {
   margin-bottom: 3em; /* Using em for margin */
 }
@@ -44,65 +31,21 @@ section#lvl_148 {
 /* Responsive Design */
 @media (max-width: 768px) {
   body {
-      margin: 1.5em;
-      padding: 1.5em;
-  }
-  section#lvl_148 {
-      padding: 1.5em;
-  }
- .judgment-body__section {
-      margin-bottom: 2em;
-  }
- .judgment-body__text {
-      margin-bottom: 1em;
+    font-size: min(22px, 1.5rem); /* Ensure font size is at least 22px */
   }
 }
 
 @media (max-width: 480px) {
   body {
-      margin: 1em;
-      padding: 1em;
+    font-size: min(22px, 1.8rem); /* Ensure font size is at least 22px */
   }
-  section#lvl_148 {
-      padding: 1em;
+  section {
+    margin-bottom: 1.5em; /* Adjust margin for smaller screens */
   }
  .judgment-body__section {
-      margin-bottom: 1.5em;
+    margin-bottom: 2em; /* Adjust margin for smaller screens */
   }
  .judgment-body__text {
-      margin-bottom: 0.5em;
+    margin-bottom: 1em; /* Adjust margin for smaller screens */
   }
-}
-
-/* Ensure font size remains at least 22px on all screens */
-@media (max-width: 768px) {
-  html {
-      font-size: 22px;
-  }
-}
-
-@media (max-width: 480px) {
-  html {
-      font-size: 22px;
-  }
-}
-
-/* Additional Styles for Better Readability */
-i, b {
-  font-style: italic;
-  font-weight: bold;
-}
-
-h1, h2 {
-  text-align: center;
-}
-
-/* Links */
-a {
-  text-decoration: none;
-  color: #337ab7;
-}
-
-a:hover {
-  color: #23527c;
 }
