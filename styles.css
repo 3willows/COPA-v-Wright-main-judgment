@@ -1,65 +1,61 @@
+/* style.css */
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 1em;
-  /* Using em for margin */
-  padding: 1em;
-  /* Using em for padding */
-  line-height: 1.5;
-  box-sizing: border-box;
+  padding: 25px;
+  background-color: white;
+  color: black;
   font-size: 1.2rem;
-  /* Setting a base font size in rem */
-  background-color: #ffffff; /* Default background color */
-  color: #000000; /* Default text color */
+  transition: background-color 0.3s, color 0.3s;
 }
 
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* Additional styles for your specific design */
 .judgment-body__section span.judgment-body__number {
   font-weight: bold;
   margin-right: 1em;
-  /* Using em for margin */
 }
 
-/* Style for anchors */
 a {
   text-decoration: none;
-  /* Remove underline */
   color: #337ab7;
-  /* Default link color */
   transition: color 0.2s ease;
-  /* Smooth color transition */
 }
 
 a:hover {
   color: #23527c;
-  /* Hover link color */
 }
 
-/* Night mode styles */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #333333; /* Dark background color */
-    color: #ffffff; /* Dark text color */
-  }
+a.dark-mode {
+  color: #66d9ef;
+}
 
-  a {
-    color: #66d9ef; /* Dark link color */
-  }
-
-  a:hover {
-    color: #ffffff; /* Dark hover link color */
-  }
+a.dark-mode:hover {
+  color: #3e8e41;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   body {
-    font-size: max(22px, 1.5rem);
-    /* Ensure font size is at least 22px */
+      font-size: max(22px, 1.5rem);
   }
 }
 
 @media (max-width: 480px) {
   body {
-    font-size: max(22px, 1.8rem);
-    /* Ensure font size is at least 22px */
+      font-size: max(22px, 1.8rem);
+  }
+}
+
+body.dark-mode {
+  /* Adjust other elements' styles for dark mode */
+  a {
+      color: #66d9ef;
+  }
+  a:hover {
+      color: #3e8e41;
   }
 }
