@@ -8,6 +8,8 @@ body {
   box-sizing: border-box;
   font-size: 1.2rem;
   /* Setting a base font size in rem */
+  background-color: #ffffff; /* Default background color */
+  color: #000000; /* Default text color */
 }
 
 .judgment-body__section span.judgment-body__number {
@@ -29,6 +31,22 @@ a {
 a:hover {
   color: #23527c;
   /* Hover link color */
+}
+
+/* Night mode styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333333; /* Dark background color */
+    color: #ffffff; /* Dark text color */
+  }
+
+  a {
+    color: #66d9ef; /* Dark link color */
+  }
+
+  a:hover {
+    color: #ffffff; /* Dark hover link color */
+  }
 }
 
 /* Responsive Design */
