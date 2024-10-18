@@ -1,31 +1,15 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 2em; /* Using em for margin */
-  padding: 2em; /* Using em for padding */
-  line-height: 1.6;
+  margin: 1em; /* Using em for margin */
+  padding: 1em; /* Using em for padding */
+  line-height: 1.5;
   box-sizing: border-box;
   font-size: 1.2rem; /* Setting a base font size in rem */
-}
-
-section {
-  margin-bottom: 2em; /* Using em for margin */
-}
-
-.judgment-body__section {
-  margin-bottom: 3em; /* Using em for margin */
 }
 
 .judgment-body__section span.judgment-body__number {
   font-weight: bold;
   margin-right: 1em; /* Using em for margin */
-}
-
-.judgment-body__text {
-  margin-bottom: 1.5em; /* Using em for margin */
-}
-
-.judgment-body__no-margin-top {
-  margin-top: 0;
 }
 
 /* Responsive Design */
@@ -37,15 +21,6 @@ section {
 
 @media (max-width: 480px) {
   body {
-    font-size: min(22px, 1.8rem); /* Ensure font size is at least 22px */
-  }
-  section {
-    margin-bottom: 1em; /* Reduced margin for smaller screens */
-  }
-  .judgment-body__section {
-    margin-bottom: 1.5em; /* Reduced margin for smaller screens */
-  }
-  .judgment-body__text {
-    margin-bottom: 0.5em; /* Reduced margin for smaller screens */
+    font-size: max(22px, 1.8rem); /* Ensure font size is at least 22px */
   }
 }
