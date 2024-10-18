@@ -40,12 +40,12 @@ section {
     font-size: min(22px, 1.8rem); /* Ensure font size is at least 22px */
   }
   section {
-    margin-bottom: 1.5em; /* Adjust margin for smaller screens */
+    margin-bottom: 1em; /* Reduced margin for smaller screens */
   }
- .judgment-body__section {
-    margin-bottom: 2em; /* Adjust margin for smaller screens */
+  .judgment-body__section {
+    margin-bottom: 1.5em; /* Reduced margin for smaller screens */
   }
- .judgment-body__text {
-    margin-bottom: 1em; /* Adjust margin for smaller screens */
+  .judgment-body__text {
+    margin-bottom: 0.5em; /* Reduced margin for smaller screens */
   }
 }
