@@ -23,6 +23,7 @@ def add_previous_page_anchor(file_path, previous_file_path):
 def process_html_files(directory):
     files = [f for f in os.listdir(directory) if f.startswith('extracted_content_lvl_') and f.endswith('.html')]
     files.sort()  # Ensure files are in the correct order
+    # This line is wrong as can be shown by a print(files)
 
     for i in range(len(files)):
         current_file_path = os.path.join(directory, files[i])

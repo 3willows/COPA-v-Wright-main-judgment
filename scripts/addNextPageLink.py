@@ -21,7 +21,10 @@ def add_next_page_anchor(file_path, next_file_path):
 # Function to process all HTML files in a directory
 def process_html_files(directory):
     files = [f for f in os.listdir(directory) if f.startswith('extracted_content_lvl_') and f.endswith('.html')]
-    files.sort()  # Ensure files are in the correct order
+    files.sort()  
+    # This line is wrong as can be shown by a print(files), which shows
+    # ['extracted_content_lvl_10.html', 'extracted_content_lvl_100.html', 'extracted_content_lvl_101.html', 'extracted_content_lvl_102.html', 'extracted_content_lvl_103.html',
+    # Hence the need to correct this later. 
 
     for i in range(len(files)):
         current_file_path = os.path.join(directory, files[i])
