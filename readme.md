@@ -7,3 +7,7 @@ Source: [National Archives](https://caselaw.nationalarchives.gov.uk/ewhc/ch/2024
 ## Tools
 
 - Link checker [here](https://validator.w3.org/)
+
+## Not included
+
+- 150 page [Appendix](https://www.judiciary.uk/wp-content/uploads/2024/05/COPAv-Wright-Judgment-Appendix.pdf) to the Judgment
